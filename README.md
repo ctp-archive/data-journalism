@@ -1,17 +1,29 @@
-# An open-source project for creating online courses, built by P2PU
-Course-in-a-Box is a free tool for building and publishing online courses — no prior coding experience required. 
+# Data journalism with the CTP archive
 
-To create your own course, simply fork this repository and delete the CNAME file. Detailed documentation is available at [course-in-a-box.p2pu.org](https://course-in-a-box.p2pu.org).
+Designed and created for the [COVID Tracking Project Archive](https://www.library.ucsf.edu/archives/covid-19-pandemic/the-covid-tracking-project-archive/) housed at the University of California San Francisco Archives and Special Collections. Funded by a [data engagement award](https://www.nnlm.gov/about/regions/region5) from the National Network of Libraries of Medicine Region 5.
+
+Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for building and publishing online courses.
+
+
+## Making changes
 
 To make changes to the template itself, a good place to start is the [`_layouts`](/_layouts), [`_includes`](/_includes) and [`css`](/css) directories. These directories contain all the layout and style files used.
 
-Questions? Ask on P2PU's [Community Forum](https://community.p2pu.org/c/tech/course-in-a-box/78).
+For custom style used with the CTP Archive project, use the [`css/p2pustrap-custom.scss`](/css/p2pustrap-custom.scss) file.
+
+## Adding materials
+
+Custom-created course materials are stored in the [`materials`](/materials) directory. Other source materials will be linked directly to the CTP Archive where possible.
 
 # Running locally
-- [install docker](https://docs.docker.com/engine/install/) 
-- Run ```docker run -i -t --rm -u 1000:1000 -p 4000:4000 -v `pwd`:/opt/app -v `pwd`/.bundler/:/opt/bundler -e BUNDLE_PATH=~/opt/bundler -w /opt/app ruby:2.7 bash -c "bundle install && bundle exec jekyll serve --watch -H 0.0.0.0"```
+Local testing done via Jekyll, which can be installed [with the instructions here](https://nicolas-van.github.io/bootstrap-4-github-pages/#run-jekyll-on-your-computer-to-speed-up-testing).
+
+Run
+```bash
+bundle exec jekyll serve
+```
 
 ---
 Course-in-a-Box is built by [Peer 2 Peer University](https://www.p2pu.org) and shared under an MIT License.
 
-Course content ("Modules") are shared under a [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/).
+Course content shared under a [CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/).
