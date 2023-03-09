@@ -13,7 +13,7 @@ A spreadsheet, at its core, is little more than a plain **text file**. What sets
 	* Special characters that separate columns are called **delimiters**.
 	* Spreadsheets that use position to separate columns are called **fixed-width** files.
 
-![A CSV file viewed in a text editor](/img/wlkthr_gifs/csv_text.png)
+![A CSV file viewed in a text editor]({{ site.baseurl }}/img/wlkthr_gifs/csv_text.png)
 
 Spreadsheet data can be stored in .txt files. Or they can have special extensions for:
 * **Comma**-separated value files (.csv)
@@ -60,7 +60,7 @@ In a new browser tab, open a new Google Sheet by typing [sheet.new](http://sheet
 
 Click where it says "Untitled Spreasheet" and give it a name, then move it somewhere in your Google Drive where you can find it again.
 
-![Opening a new sheet.](/img/wlkthr_gifs/new_sheet.gif)
+![Opening a new sheet.]({{ site.baseurl }}/img/wlkthr_gifs/new_sheet.gif)
 
 You can name it anything you want – in our case, we'll keep it simple and use `covid_ny`.
 
@@ -72,7 +72,7 @@ Specifying `Separator type` gives us some control over how Sheets determines the
 
 Use the dropdown menu to change the `Import location` to "Replace spreadsheet," then click `OK`. 
 
-![Google Sheet import dialogue](/img/wlkthr_gifs/import_file.png)
+![Google Sheet import dialogue]({{ site.baseurl }}/img/wlkthr_gifs/import_file.png)
 
 Sheets will process the file, and you should see your data!
 
@@ -94,7 +94,7 @@ Take a minute to examine the data and think about the fields. Most are self-expl
 
 For sanity's sake, let's freeze the **header row** – where our column names are – by clicking `View > Freeze > 1 row` or by using the cursor to click and drag the thick grey bar in the top corner of our spreadsheet data. Now no matter where we scroll, we know what our columns mean.
 
-![Freezing the header row](/img/wlkthr_gifs/freeze_header.gif)
+![Freezing the header row]({{ site.baseurl }}/img/wlkthr_gifs/freeze_header.gif)
 
 There's a good bit of data here, and although it's not impossible to scroll up and down through more than 300 rows, you could imagine this would get tedious if your data was 1,000 or 10,000 rows long.
 
@@ -109,13 +109,13 @@ By default, the data is sorted by `date` in **descending** order. Let's start fr
 
 On the spreadsheet toolbar, you should see a button that looks like a funnel. 
 
-![Filter icon](/img/wlkthr_gifs/filter.png)
+![Filter icon]({{ site.baseurl }}/img/wlkthr_gifs/filter.png)
 
 This is your filter toggle, and if you click it, you'll notice a subtle change in your headers. They now have little inverted pyramids next to them!
 
 In the `date` column, click the pyramid to bring up the filter dialogue, then click `Sort A → Z`.
 
-![Sort by date.](/img/wlkthr_gifs/sort_date.gif)
+![Sort by date.]({{ site.baseurl }}/img/wlkthr_gifs/sort_date.gif)
 
 You'll probably notice here that the "dates" don't really look like dates – they're actually numerics. But we'll deal with that later. But if we think about it, we can see that 20200302 translates to "March 2, 2020," the first day data was captured for New York (and about a week before the World Health Organization [declared COVID-19 a pandemic](https://www.cdc.gov/museum/timeline/covid19.html)).
 
@@ -129,13 +129,13 @@ Click the pyramid next to the `onVentilatorCurrently` column to bring up the fil
 3. Type `1000`
 4. Click `OK`
 
-![Sort by date.](/img/wlkthr_gifs/filter_vents.gif)
+![Sort by date.]({{ site.baseurl }}/img/wlkthr_gifs/filter_vents.gif)
 
 How many rows is that?
 
 Find out by highlighting one of your columns (try `onVentilatorCurrently`). You'll see a box pop up in the bottom right with a `Sum` value that isn't all that helpful. Click the box to select `Count Numbers` instead (you can also use `Count`, although this will include the header row).
 
-![Get a count of your filtered items.](/img/wlkthr_gifs/rough_count.gif)
+![Get a count of your filtered items.]({{ site.baseurl }}/img/wlkthr_gifs/rough_count.gif)
 
 From there, we can see that 34 days saw more than 1,000 COVID-19 patients on ventilators.
 
@@ -162,7 +162,7 @@ So `=SUM(2,2)` would display `4`, and it's the equivalent of just typing `=4+4` 
 
 Once you type `=` at the beginning of a cell, you can substitute values from other cells with a **cell reference**, a letter and number combination describing the row and column of the cell.
 
-![A cell reference grid.](/img/wlkthr_gifs/cell_reference.jpeg)
+![A cell reference grid.]({{ site.baseurl }}/img/wlkthr_gifs/cell_reference.jpeg)
 
 But you don't actually need to look up a cell reference and hand-type it into a cell – once you begin a cell with an equal sign, you click on the cell you want and Sheets will insert the cell reference for you.
 
@@ -174,7 +174,7 @@ Start by toggling your filters off. You should be looking at all your original d
 
 Create a column by right-clicking on the `A` label of the data column, then clicking `Insert 1 column right`. Do this three times more to create four total new empty columns. We'll name them `year`, `month`, `day` and `date_clean`.
 
-![Create and name new columns.](/img/wlkthr_gifs/new_columns.gif)
+![Create and name new columns.]({{ site.baseurl }}/img/wlkthr_gifs/new_columns.gif)
 
 What we want to do is slice up the sequence of numbers in our `date` column. We'll do that with a few functions designed *exactly* for that purpose: `LEFT`, `MID` and `RIGHT`.
 
@@ -211,7 +211,7 @@ So if we want to start at the fourth character and extract two total characters,
 
 Use these formulas to extract the first year, month and day from our `date` column by cell reference.
 
-![Using the LEFT, MID and RIGHT functions.](/img/wlkthr_gifs/left_mid_right.gif)
+![Using the LEFT, MID and RIGHT functions.]({{ site.baseurl }}/img/wlkthr_gifs/left_mid_right.gif)
 
 <div id="accordion" role="tablist">
   <div class="card">
@@ -253,7 +253,7 @@ In the bottom right corner of the selection you highlighted, you'll see a black 
 
 Double-click, and you'll apply the fill down operation to all your rows.
 
-![Demonstrating fill down](/img/wlkthr_gifs/fill_down.gif)
+![Demonstrating fill down]({{ site.baseurl }}/img/wlkthr_gifs/fill_down.gif)
 
 Now we can reconstruct our date using the `DATE` function, which accepts as its three parameters a year, month and day.
 
@@ -263,7 +263,7 @@ Now we can reconstruct our date using the `DATE` function, which accepts as its 
 
 Like you did with our other functions, use cell references to supply your arguments for your very first row of data. Then use the fill down operation to fill in the rest of the rows.
 
-![Using the DATE function.](/img/wlkthr_gifs/date_fix.gif)
+![Using the DATE function.]({{ site.baseurl }}/img/wlkthr_gifs/date_fix.gif)
 
 You may find that Sheets will prompt you with an option to "autofill" the rest of your rows, which gives you the same result.
 
@@ -287,7 +287,7 @@ Start this process by sorting our dates in ascending (or oldest to newest) order
 
 Click on any cell in the `date_clean` column. Then use the menu bar to select `Data > Sort sheet > Sort sheet by column E (A to Z)`.
 
-![](/img/wlkthr_gifs/sort_clean_date.gif)
+![]({{ site.baseurl }}/img/wlkthr_gifs/sort_clean_date.gif)
 
 With our data sorted, we can start generating our new figures.
 
