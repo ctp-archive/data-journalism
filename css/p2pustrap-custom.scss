@@ -34,7 +34,7 @@
 {% if site.jumbotron_mask %}
 	$jumbotron-mask: '{{ site.jumbotron_mask}}';
 {% else %}
-	$jumbotron-mask: 'img/jumbotron_mask.svg';
+	$jumbotron-mask: 'img/jumbotron-mask.svg';
 {% endif %}
 
 @import "custom";

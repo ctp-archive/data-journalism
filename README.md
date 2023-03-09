@@ -4,10 +4,16 @@ Designed and created for the [COVID Tracking Project Archive](https://www.librar
 
 Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for building and publishing online courses.
 
+## TODO
+
+[ ] Figure out a way to print the walkthrough only as an accompanying PDF.
+[ ] Specify what should be flipped vs. done with an instructor
 
 ## Making changes
 
 To make changes to the template itself, a good place to start is the [`_layouts`](/_layouts), [`_includes`](/_includes) and [`css`](/css) directories. These directories contain all the layout and style files used.
+
+See this [Boostrap 4 cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/) for a quick reference to classes that mostly work with the underlying Boostrap 4 template in use here.
 
 For custom style used with the CTP Archive project, use the [`css/p2pustrap-custom.scss`](/css/p2pustrap-custom.scss) file.
 
@@ -15,10 +21,10 @@ For custom style used with the CTP Archive project, use the [`css/p2pustrap-cust
 
 Custom-created course materials are stored in the [`materials`](/materials) directory. Other source materials will be linked directly to the CTP Archive where possible.
 
-# Running locally
+## Running locally
 Local testing done via Jekyll, which can be installed [with the instructions here](https://nicolas-van.github.io/bootstrap-4-github-pages/#run-jekyll-on-your-computer-to-speed-up-testing).
 
-Run
+Run in the directory
 ```bash
 bundle exec jekyll serve
 ```

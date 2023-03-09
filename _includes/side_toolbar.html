@@ -7,7 +7,7 @@
 				Previous module:
 			</div>
 			<a rel="prev" class="prev" href="{{ site.baseurl }}{{ prev_post.url }}">
-				{{ prev }} </a>
+				{{ prev|replace:"-"," "  }} </a>
 		</div>
 		<hr />
 	{% endif %}
@@ -27,7 +27,7 @@
 			<div class="title">
 				Next module:
 			</div>
-			<a rel="next" class="next" href="{{ site.baseurl }}{{ next_post.url }}"> {{ next }}
+			<a rel="next" class="next" href="{{ site.baseurl }}{{ next_post.url }}"> {{ next|replace:"-"," "  }}
 			</a>
 		</div>
 	{% endif %}

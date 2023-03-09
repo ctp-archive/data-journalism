@@ -66,10 +66,10 @@ blockquote {
   padding: 1.2em;
   margin: 0;
   border: 0;
-  background: #DFF7F4;
+  background: #d1d1e8;
   font-style: normal;
   font-size: inherit;
-  border-left: 7px solid $p2pu-light-blue;
+  border-left: 7px solid #8b8dc7;
 }
 
 pre {
@@ -278,4 +278,14 @@ footer {
     text-decoration: none;
     transition: all 0.3s linear;
   }
+}
+
+/* Custom theming below */
+
+.jumbotron.jumbotron-fluid .container.text-center img {
+  max-width: 450px;
+}
+
+body a {
+    color: #8b8dc7;
 }
