@@ -4,6 +4,6 @@ title: Advanced spreadsheets
 
 TKTK
 
-Vlookup
-
-Scraping
+* calculate flag columns
+* Vlookup
+* Scraping

@@ -287,7 +287,7 @@ Start this process by sorting our dates in ascending (or oldest to newest) order
 
 Click on any cell in the `date_clean` column. Then use the menu bar to select `Data > Sort sheet > Sort sheet by column E (A to Z)`.
 
-![]({{ site.baseurl }}/img/wlkthr_gifs/sort_clean_date.gif)
+![Sort and clean date]({{ site.baseurl }}/img/wlkthr_gifs/sort_clean_date.gif)
 
 With our data sorted, we can start generating our new figures.
 
@@ -301,33 +301,127 @@ In the second row of your new `positive_new` column (which is actually marked wi
 =H3-H2
 ```
 
+### Nesting formulas
+
+Don't worry about filling down the whole column. Instead, click on the blue box in the bottom right corner of your `positive_new` cell and drag it down six more rows – giving you a total of seven entries.
+
+We'll worry about the rest of the rows later. For now, let's focus on our `positive_avg` column.
+
+What we want to calculate is a *rolling average* of new cases – in this case a seven-day average – that can help us flatten out the natural "spikiness" we'd expect from a daily count.
+
+Why would the daily value be spiky?
+
+**Think about how the data is collected.** Do people surge to test sites on different days of the week? Do weekend hours affect how quickly tests are processed and reported? These factors at the beginning stage of the data system can obscure meaning, so viewing both numbers – daily counts and a rolling average – might help us detect signals in the noise.
+
+We can use the `AVERAGE` function to do the math, but we're likely to get a bunch of decimals of precision that would muddy our analysis. So we're also going to use the `ROUND` function to round the result of the average to the nearest whole number.
+
+By **nesting** these formulas – one inside another – we can run both functions at once. Like so:
+
+```
+=ROUND(AVERAGE(values))
+```
+
+To the right of the seventh entry of your `positive_new` column, enter both functions and select the seven items in the adjoining `positive_new` column.
+
+![Calculate a seven-day average]({{ site.baseurl }}/img/wlkthr_gifs/lag_avg.gif)
+
+
+### A new way to 'fill'
+
 You may notice, if you try the fill down trick from our previous steps, that nothing happens.
 
 Why?
 
-Notice that the adjoining `death` column has no data – the state hasn't reported any COVID-19 related deaths yet.
+Notice that the adjoining `death` column has no data – the state hasn't reported any COVID-19 related deaths as of March 2.
 
-Sheets performs the fill down operation based on the number of rows in the adjoining column. That's why, in our other columns, it didn't keep updating each row all the way down through our 700-odd blank rows. We'll have to fill down a slightly different way this time by higlighting all the cells we want to update.
+Sheets performs the fill down operation based on the number of rows in the adjoining columns. That's why, in our other columns, it didn't keep updating each row all the way down through our 700-odd blank rows.
 
-If you want, you can do this by clicking that black square in the corner of your `positive_new` cell an dragging aaaaaaallll the way down to the bottom of your sheet. But that's annoying. And when your data gets bigger, it's way too time consuming.
+We'll have to fill down a slightly different way this time by higlighting all the cells we want to update.
+
+If you want, you can do this by clicking that blue square in the corner of your `positive_new` cell an dragging aaaaaaallll the way down to the bottom of your sheet. But that's annoying. And when your data gets bigger, it's way too time consuming.
 
 Instead, we'll use a few keyboard shortcuts.
 
-Click on any entry.
+Click on any number in the `death` column. Then use <kbd>CTRL + ↓</kbd>&ensp;(PC) or <kbd>CMD + ↓</kbd>&ensp;(Mac) to jump down to the end of the sheet. If we mash the right arrow (<kbd>→</kbd>), we'll pop over to the last blank row in the `positive_new` column.
 
+Next, hold down <kbd>SHIFT</kbd> and hit the right arrow (<kbd>→</kbd>) to highlight the bottom-most cells of your `positive_new` and `positive_avg` columns.
 
-* calculate difference columns
-* calculate average columns
-* calculate flag columns
+Now hold down <kbd>SHIFT + CTRL</kbd>&ensp;(PC) or <kbd>SHIFT + CMD</kbd>&ensp;(Mac) and hit the up arrow (<kbd>↑</kbd>). This combination of shortkeys keys allows you to both **collect** (<kbd> SHIFT </kbd>) and **jump** (<kbd> CTRL/CMD </kbd>), highlighting all the cells up to your next non-blank entries.
 
-## Exercises
+Now press <kbd> CTRL + D </kbd>&ensp;(PC) or <kbd> CMD + D </kbd>&ensp;(Mac) – the keyboard shortcut for **fill up**.
 
-For New York, what's the peak?
+Just like with **fill down**, you'll see the formula you wrote up top copied and updated row by row.
 
-Split the class into multiple sections.
+One last thing we'll need to do.
 
-Download several different datasets
+Remember the caution earlier about sorting with our new `positive_new` and `positive_avg` columns? We're going to prevent ourselves from making that mistake.
 
-Answer the following quesitons
-- what's the peak
+Click on the letter column references at the top of your two columns (they should be N and O) to highlight them. Right click to bring up the mouse dialogue and click `Copy`.
 
+Then right click again and click `Paste special > Values only`.
+
+![Pasting special as values]({{ site.baseurl }}/img/wlkthr_gifs/paste_values.gif)
+
+While it doesn't look like anything changed, pasting these values overwrote all of our formulas.
+
+And that's a good thing! It means our figures can't be overwritten if we sort.
+
+## Class exercises
+
+With the data you've prepared, see if you can answer the following **small questions** as a class:
+
+* During the first year of the pandemic, when did new COVID cases peak in New York?
+* When did the spread of the virus seem to be ebbing?
+* When did hospitalizations peak?
+* What about deaths?
+* What sort of relationships did the peaks of cases, hospitalizations and death seem to have?
+
+And for discussion:
+* What measure should you use to define "peak" COVID?
+
+## Hands-on exercises
+
+Individually or in small groups, select data from one of the states below.
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle"
+          type="button" id="dropdownMenu1" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+    Download state data
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/al.csv">Alabama</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/az.csv">Arizona</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/ca.csv">California</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/fl.csv">Florida</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/ga.csv">Georgia</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/il.csv">Illinois</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/in.csv">Indiana</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/la.csv">Louisiana</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/ma.csv">Massachusetts</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/md.csv">Maryland</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/mi.csv">Michigan</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/mn.csv">Minnesota</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/mo.csv">Missouri</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/nc.csv">North Carolina</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/ne.csv">Nebraska</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/nj.csv">New Jersey</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/nv.csv">Nevada</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/oh.csv">Ohio</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/pa.csv">Pennsylvania</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/tn.csv">Tennessee</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/tx.csv">Texas</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/ut.csv">Utah</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/va.csv">Virginia</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/wa.csv">Washington</a>
+    <a class="dropdown-item" href="https://explore.covidtracking.com/download/state/wi.csv">Wisconsin</a>
+  </div>
+</div>
+
+Use the data to answer:
+
+* When did new COVID cases peak in the state?
+
+After about 15 minutes, students should report back their findings and discuss:
+
+* Why might the peaks have been different from state to state?

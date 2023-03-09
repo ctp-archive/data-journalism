@@ -6,8 +6,8 @@ Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for 
 
 ## TODO
 
-[ ] Figure out a way to print the walkthrough only as an accompanying PDF.
-[ ] Specify what should be flipped vs. done with an instructor
+- [ ] Figure out a way to print the walkthrough only as an accompanying PDF.
+- [ ] Specify what should be flipped vs. done with an instructor
 
 ## Making changes
 
@@ -20,6 +20,8 @@ For custom style used with the CTP Archive project, use the [`css/p2pustrap-cust
 ## Adding materials
 
 Custom-created course materials are stored in the [`materials`](/materials) directory. Other source materials will be linked directly to the CTP Archive where possible.
+
+When linking images, make sure to use `{{ site.baseurl }}` to work with both testing and the deployed version.
 
 ## Running locally
 Local testing done via Jekyll, which can be installed [with the instructions here](https://nicolas-van.github.io/bootstrap-4-github-pages/#run-jekyll-on-your-computer-to-speed-up-testing).
