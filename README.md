@@ -17,6 +17,8 @@ See this [Boostrap 4 cheatsheet](https://hackerthemes.com/bootstrap-cheatsheet/)
 
 For custom style used with the CTP Archive project, use the [`css/p2pustrap-custom.scss`](/css/p2pustrap-custom.scss) file.
 
+Push to the `gh-pages` fork.
+
 ## Adding materials
 
 Custom-created course materials are stored in the [`materials`](/materials) directory. Other source materials will be linked directly to the CTP Archive where possible.
