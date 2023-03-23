@@ -1,5 +1,5 @@
 ---
-title: Advanced spreadsheets
+title: Advanced spreadsheets - Exercises
 ---
 
 # Advanced spreadsheets

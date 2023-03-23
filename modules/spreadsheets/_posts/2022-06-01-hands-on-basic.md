@@ -41,10 +41,16 @@ Individually or in small groups, select data from one of the states below.
   </div>
 </div>
 
-Use the data to answer:
+## Explore
 
 * When did new COVID cases peak in the state?
+* Using the library's website, investigate coverage in your state's local press during the period you discovered.
+  * How did local news organizations cover the spike?
+  * In your view, how well did their coverage serve the community?
 
-After about 15 minutes, students should report back their findings and discuss:
+## Discussion 
+
+After 15-20 minutes, students should report back their findings and discuss:
 
 * Why might the peaks have been different from state to state?
+* What did your state's coverage look like during these peaks?
