@@ -2,7 +2,7 @@
 title: 'Spreadsheet basics - Exercises'
 ---
 
-## Spreadsheet basics - Class exercises
+# Spreadsheet basics - Class exercises
 
 With the data you've prepared, see if you can answer the following **[small questions](http://127.0.0.1:4000/modules/spreadsheets/interviewing-your-data/)** as a class:
 

@@ -13,6 +13,8 @@ Although the content of this course is targeted primarily toward data journalism
 
 If you're a data journalism educator interested in using the content in these modules in your courses, [please let us know](mailto::tyler.dukes@gmail.com)!
 
+And if you've already started using this content, please consider [taking our survey](https://ucsf.co1.qualtrics.com/jfe/form/SV_2mWh1W6AWqApLo2) to help us refine the content.
+
 # How is it organized?
 
 In general, each of this course's <mark>TK</mark> modules is organized into a series of submodules:

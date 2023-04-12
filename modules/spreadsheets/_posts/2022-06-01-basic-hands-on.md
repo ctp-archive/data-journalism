@@ -2,7 +2,7 @@
 title: 'Spreadsheet basics - Hands-on'
 ---
 
-## Spreadsheet basics - Hands-on exercises
+# Spreadsheet basics - Hands-on exercises
 
 Individually or in small groups, select data from one of the states below.
 
