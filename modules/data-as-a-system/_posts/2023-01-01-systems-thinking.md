@@ -2,4 +2,4 @@
 title: Systems thinking
 ---
 
-TKTKTK
+# Systems thinking

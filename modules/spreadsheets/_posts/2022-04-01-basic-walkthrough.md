@@ -2,7 +2,7 @@
 title: 'Spreadsheet basics - walkthrough'
 ---
 
-# Walkthrough: spreadsheet basics
+# Walkthrough: Spreadsheet basics
 
 ## Jump to a section
 
@@ -30,13 +30,13 @@ We'll be working with a simplified version of the COVID Tracking Project's data 
 
 In a new browser tab, open a new Google Sheet by typing [sheet.new](http://sheet.new/) in the address bar.
 
-Click where it says "Untitled Spreasheet" and give it a name, then move it somewhere in your Google Drive where you can find it again.
+Click where it says "Untitled Spreadsheet" and give it a name, then move it somewhere in your Google Drive where you can find it again.
 
 ![Opening a new sheet.]({{ site.baseurl }}/img/wlkthr_gifs/new_sheet.gif)
 
 You can name it anything you want – in our case, we'll keep it simple and use `covid_ny`.
 
-> PRO TIP: It's a good habit to name your files and directories in lowercase WITHOUT any spaces, to make them more computer readable . You can use underscores or dashes to make your names more human readable.
+> **PRO-TIP** It's a good habit to name your files and directories in lowercase WITHOUT any spaces, to make them more computer readable . You can use underscores or dashes to make your names more human readable.
 
 To import the file, click `File > Import` in the main menu, then click `UPLOAD`. From here, you'll need to browse to where you downloaded your CSV file and select it or drag the file directly into the dialogue box.
 
