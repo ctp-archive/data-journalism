@@ -8,13 +8,17 @@ So far, you've mastered sorting, filtering, functions and other basic spreadshee
 
 ## Jump to a section
 
-1. [Scraping the data](#scraping-the-data)
+1. [Scraping facility data](#scraping-facility-data)
+1. [Import population data](#import-population-data)
 1. [Data dictionary](#data-dictionary)
 1. [Naming your tabs](#naming-your-tabs)
-1. [Vlookup](#using-vlookup-to-join-data)
-1. [Pivot tables](#using-pivot-tables-to-create-crosstabs)
+1. [Defining a 'join'](#what-is-a-join)
+1. [Joins with vlookup](#using-vlookup-to-join-data)
+1. [The pivot table editor](#the-pivot-table-editor)
+1. [Using Pivot Tables to create crosstabs](#using-pivot-tables-to-create-crosstabs)
+1. [Calculated fields with pivot tables](#calculated-fields-with-pivot-tables)
 
-## Scraping the data
+## Scraping the facility data
 
 For this walkthrough, we'll be working with long-term care facility outbreak data from the state of [Connecticut](https://explore.covidtracking.com/state/ct/ltc/facilities.html).
 
@@ -68,7 +72,7 @@ In your A1 cell, you should no longer see your `IMPORTHTML` formula in the funct
 
 > **PRO-TIP** Remember how to freeze your header row and navigate around the spreadheet? Review what you learned in the [previous submodule]({{ site.baseurl }}/modules/spreadsheets/basic-walkthrough/#navigating-the-spreadsheet).
 
-## Import more data
+## Import population data
 
 We'll also use one additional dataset: [2020 town population estimates](https://portal.ct.gov/DPH/Health-Information-Systems--Reporting/Population/Annual-Town-and-County-Population-for-Connecticut) from the Connecticut Department of Public Health.
 
@@ -120,17 +124,161 @@ Following our best practices for naming files (all lowercase, no spaces, short a
 
 ![Renaming your sheets]({{ site.baseurl }}/img/wlkthr_gifs/name_sheets.gif)
 
+## What is a join?
+
+At this point, we've got two separate datasets in two separate sheets, or tabs. If we want to deepen our analysis, we'll need to **join** them together.
+
+The term "join" has a very specific meaning in a data science and data journalism context, describing the act of **linking** one or more datasets together using one or more common columns.
+
+There are a few different techniques to join data, most of which we'll get to later.
+
+But for now, let's look at two basic types of joins with a few examples from the American Film Institute's [list of the best movies of all time](https://www.afi.com/afis-100-years-100-movies-10th-anniversary-edition/?gclid=CjwKCAjwgqejBhBAEiwAuWHioOvB43yzx0A7x02NFz7o8etWAtLGks9d6tGh_WWzpT9bWoQOcfxX4BoCNU8QAvD_BwE).
+
+**One-to-one**
+: Two tables with the same number of rows. Each row in one table matches only one row in the second table.
+
+![One to one join]({{ site.baseurl }}/img/wlkthr_gifs/join-one-to-one.png)
+
+**One-to-many**
+: Two tables with different numbers of rows. Each row in one table matches to multiple rows in a second table.
+
+![One to many join]({{ site.baseurl }}/img/wlkthr_gifs/join_many_to_one.png)
+
 ## Using vlookup to join data
 
-## Using Pivot Tables to create crosstabs
+We can use the [`vlookup`](https://support.google.com/docs/answer/3093318?hl=en) function (short for "vertical lookup") to perform both one-to-one and one-to-many joins across two datasets.
 
-Let's pick two different states to compare
-va - eth back to 4/12 for cases, back to 6/14 for deaths
-https://explore.covidtracking.com/state/va/crdt/index.html
-sc - eth back to 4/12 for cases, back to 11/11 for deaths
-fl - eth back to 4/22 for cases, back to 6/17 for deaths
-https://explore.covidtracking.com/state/fl/crdt/index.html
-ct has facilities with census and fits in limits
-la has facilities with census and fits within limits. also has counties
+The function accepts three parameters as well as an **optional parameter**, which is differentiated from the rest with square brackets (`[]`).
 
-calculate rates of positivity using the census
+```
+VLOOKUP(search_key, range, index, [is_sorted])
+```
+
+* The **search key** is the item you want to match in your first and second datasets.
+* The **range** is the second dataset you want to match. The item you're matching must always be in the first column.
+* The **index** is the column number in the second dataset containing the data you Sheets to bring in to your first dataset.
+* The option parameter **is_sorted** is either 'TRUE' or 'FALSE', depending on whether or not you want an approximate match. It's a good idea to always set this to `FALSE`, which tells the formula you want an exact match.
+
+Before we experiment with the vlookup function let's think through the outcome we want:
+
+"Create a column containing the population for each city."
+
+Based on what we know about spreadsheets and the `vlookup` formula, executing that outcome might look something like this:
+
+
+1. Create a new column named 'population'
+1. Match the 'city' column in our 'facility' sheet to the 'town' column of our 'population' sheet
+1. For each match, retrieve the data from the 'estimated_pop' column of our 'population' sheet
+1. Enter the matched data into the 'population' column of our 'facility' sheet
+
+Let's translate those actions into the spreadsheet!
+
+In the **facility** tab of our Connecticut facility data, insert a new column to the right of `city`. Name it `population`.
+
+![Create a new column]({{ site.baseurl }}/img/wlkthr_gifs/vlookup_new_column.gif)
+
+In the first row of our new `population` column, type or paste in the following formula:
+
+```
+=VLOOKUP(C2, population!B:C, 2, FALSE)
+```
+
+To decode that formula a bit:
+* `=VLOOKUP(` Call our function
+* `C2,` Define the search key as the city column in our facility sheet
+* `population!B:C,` Define the range as the population sheet, starting with the town column (B), where were want our search key to match, and extending to the next column containing the estimated population
+* `2, ` Get the data from column with index 2, the second column of the range we just defined containing our estimated population
+* `FALSE)` Provide an exact match
+
+When we do a fill down (or autocomplete when prompted by Sheets), you should see the joined values appear for the rest of the column.
+
+![Using vlookup]({{ site.baseurl }}/img/wlkthr_gifs/vlookup_enter.gif)
+
+Success! Well, sort of.
+
+> **PRO-TIP** Getting multiple errors? Review your formula carefully. Did you use the correct search key? Did you provide the correct range, with the data you want to match between sheets in the first position?
+
+Do you spot any errors? How about on rows where the facility is located in Mystic, Conn.? Or Southport? Or a town called "MARLBOROUG H"?
+
+The last one is an obvious typo. If you fix it by deleting the space before the "H", you should see the value fill in automatically.
+
+But the other two are less obvious. Hover over the error in the cell to trigger the tooltip to see what's wrong.
+
+![Diagnosing your errors]({{ site.baseurl }}/img/wlkthr_gifs/vlookup_error.png)
+
+If you navigate over to your population sheet, you'll notice that there *is* no population value for Mystic or Southport.
+
+Turns out these are places smaller than towns in Connecticut, so the state data we're using doesn't track their population!
+
+We'll leave them alone for now, but it's worth noting as we think through how we do comparisons later.
+
+## The pivot table editor
+
+What sort of patterns might emerge from this data among the facilities in a given city? Or among facilities of a certain type?
+
+These are questions we can try to answer when we **group** and **summarize** variables using a special feature of spreadsheet software called **Pivot tables**.
+
+To get started, click "Insert" in the top menu, then "Pivot table." By default, the resulting dialogue will select your current sheet and will ask if you want to insert the result in a new sheet.
+
+Click "Create."
+
+What Sheets shows us next is a special kind of table that looks and feels different than the normal rows and columns we've seen so far.
+
+![Elements of a pivot table]({{ site.baseurl }}/img/wlkthr_gifs/pivot_table.png)
+
+In pivot tables, instead of manually working with data, we'll largely use the **editor/builder**, work with **field/column names** and produce data that's piped into the **results** section.
+
+To see how this works, try dragging and dropping one of the field names (like `facility_name`) into the Rows section of the builder.
+
+![Testing a pivot table]({{ site.baseurl }}/img/wlkthr_gifs/pivot_table_test.gif)
+
+You'll see each facility name appear in the "Rows" section of the results panel. You can click the `X` button in the builder to remove the field and start over.
+
+It's important to know that the pivot table is effectively cordoned off – nothing you do on this tab will impact your source data. That makes it an effective sandbox for exploring the data quickly and axiety-free!
+
+## Using pivot tables to create crosstabs
+
+The true power of pivot tables is the ability to aggregate data across groups of variables.
+
+Say we want to know, for example, whether federal- or state-regulated long-term care facilities saw more deaths from COVID-19.
+
+* Start by dragging the `state_fed_regulated` field into "Rows."
+* Then, drag `resident_deaths` into "Values."
+
+You'll see the two unique values of the `state_fed_regulated` column ("Federal" and "State") show up in your new table, along with a `SUM` of the `resident_deaths` column.
+
+Sheets just guessed, when you dragged the numerical `resident_deaths` field into your Values section, that you wanted to sum the values. But you can select other types of summarization functions (`COUNT`, `AVERAGE` or `MEDIAN` to name a few).
+
+If you want to see more than one of those summarization functions at the same time, you can drag the `resident_deaths` field to "Values" again and select something different.
+
+![Summarization functions with a pivot table]({{ site.baseurl }}/img/wlkthr_gifs/pivot_table_summary.gif)
+
+You can also layer categories of data in subcategories by adding more fields to "Rows" or compare them by adding the field to "Columns".
+
+![Testing a pivot table]({{ site.baseurl }}/img/wlkthr_gifs/pivot_table_columns.gif)
+
+In this case, working with the additional `ctp_facility_category` field just shows us that the facilities are called "nursing homes" if they're federally regulated and "assisted living" if they're regulated by the state.
+
+While that's not particularly useful to us, we can delete the field from our results without much trouble.
+
+## Creating calculated fields in pivot tables
+
+A raw count of deaths or cases is somewhat useful in understanding the scope of outbreaks in Connecticut long-term care facilities. But how do we know the number of patients is comparable?
+
+Let's add up both the number of residents and the number of cases in each type of regulated facility. Add `state_fed_regulated` to "Rows", then `resident_census` and `resident_positives` to "Values."
+
+Now, we can calculate an infection **rate** per patient to get a more comparable figure.
+
+In "Values" section, click the "Add" button, then "Calculated Field." You'll see a new box appear with a blank formula, where you'll paste this and hit enter:
+
+```
+=resident_positives / resident_census * 100
+```
+
+You should see a figure calculated in the results section, showing that the infection rate of federal-regulated facilities was much higher than state-regulated facilities.
+
+![Calculated fields with pivot tables]({{ site.baseurl }}/img/wlkthr_gifs/pivot_table_calculated.gif)
+
+Why were those rates so different? Are there other factors that explain why patients in federally regulated facilities contracted COVID more often? Is the disparity a story?
+
+Not all of those answers will be obvious from the data. But it's the data journalist's job to find out. 
