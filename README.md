@@ -33,6 +33,9 @@ Run in the directory
 bundle exec jekyll serve
 ```
 
+## Other helpful links
+* [Icon reference](https://www.w3schools.com/icons/icons_reference.asp)
+
 ---
 Course-in-a-Box is built by [Peer 2 Peer University](https://www.p2pu.org) and shared under an MIT License.
 

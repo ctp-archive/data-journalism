@@ -22,7 +22,7 @@ title: 'Spreadsheet basics - walkthrough'
 
 We'll be working with a simplified version of the COVID Tracking Project's data on the state of New York using Google Sheets. Get started by downloading the CSV file below.
 
-<form method="get" action="/materials/covid_ny.csv" class="text-center">
+<form method="get" action="{{ site.baseurl }}/materials/covid_ny.csv" class="text-center">
 	<button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Download the data</button>
 </form>
 

@@ -13,7 +13,7 @@ As a class, use the sketches from each political division to sketch out a **new 
 As you work, consider the following questions as a class:
 
 * How do the inputs and outputs of your systems differ?
-* How oftenn are you collecting the data? Daily? Weekly?
+* How often are you collecting the data? Daily? Weekly?
 * How do the systems you set up **individually** fit **together**?
 * What changes do you need to make for them to be compatible?
 

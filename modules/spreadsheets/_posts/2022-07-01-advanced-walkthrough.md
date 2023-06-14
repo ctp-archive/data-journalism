@@ -16,7 +16,7 @@ So far, you've mastered sorting, filtering, functions and other basic spreadshee
 1. [Joins with vlookup](#using-vlookup-to-join-data)
 1. [The pivot table editor](#the-pivot-table-editor)
 1. [Using Pivot Tables to create crosstabs](#using-pivot-tables-to-create-crosstabs)
-1. [Calculated fields with pivot tables](#calculated-fields-with-pivot-tables)
+1. [Calculated fields with pivot tables](#creating-calculated-fields-in-pivot-tables)
 
 ## Scraping the facility data
 
@@ -232,7 +232,15 @@ To see how this works, try dragging and dropping one of the field names (like `f
 
 ![Testing a pivot table]({{ site.baseurl }}/img/wlkthr_gifs/pivot_table_test.gif)
 
-You'll see each facility name appear in the "Rows" section of the results panel. You can click the `X` button in the builder to remove the field and start over.
+Under the hood, your pivot table is grouping your data – in this case by `facility_name` – and displaying each unique value row by row in  the results panel.
+
+To sort the data, click "Sort by" in the "Rows" section of the panel and select the field you want  to sort, along with its sort order (ascending, for A-Z, or descending, for Z-A).
+
+It might look identical to your original data, but notice that there are only 341 rows of facility names (minus the header and the Grand Total row), where your source data has 346 rows.
+
+That's  because a few of your facility names are repeated! `WHITNEY CENTER`, for example, is listed  twice in the same city.
+
+You can click the `X` button in the builder to remove the field and start over.
 
 It's important to know that the pivot table is effectively cordoned off – nothing you do on this tab will impact your source data. That makes it an effective sandbox for exploring the data quickly and axiety-free!
 
@@ -275,10 +283,32 @@ In "Values" section, click the "Add" button, then "Calculated Field." You'll see
 =resident_positives / resident_census * 100
 ```
 
-You should see a figure calculated in the results section, showing that the infection rate of federal-regulated facilities was much higher than state-regulated facilities.
+You should see a figure calculated in the results section.
 
 ![Calculated fields with pivot tables]({{ site.baseurl }}/img/wlkthr_gifs/pivot_table_calculated.gif)
 
-Why were those rates so different? Are there other factors that explain why patients in federally regulated facilities contracted COVID more often? Is the disparity a story?
+By default, calculated fields group your data by the fields you set in "Rows" and summarize your results with the `SUM` function. 
 
-Not all of those answers will be obvious from the data. But it's the data journalist's job to find out. 
+So you typed the function above into the "Formula" field, but pivot table actually calculates the result by adding up those variables from all the facilities in each group (federally-regulated or state-regulated) and then executes your formula:
+
+```
+=SUM(resident_positives) / SUM(resident_census) * 100
+```
+
+But you can customize that behavior, to create more complex analyses.
+
+Suppose, for example, you want to explore the relationship between city population and deaths in facilities due to COVID. We wouldn't want to add up the city population multiple times before we calculate the rate.
+
+Because the population is the same across city, we can introduce another type of aggregation function that only uses the population once (like `MAX`, `MIN`, etc).
+
+Starting with clear pivot table, drag `city` into "Rows", then `population` and `resident_deaths` into "Values."
+
+In the `population` box, set "Summarize by" to the `MAX` function. You can leave `resident_deaths` with the default `SUM`.
+
+Now, add a calculated field with the following formula.
+
+```
+=SUM(resident_deaths) / SUM(resident_census) * 100
+```
+
+Change "Summarize by" to `Custom` and you should see your calculated field change to show the rate of deaths per population.
