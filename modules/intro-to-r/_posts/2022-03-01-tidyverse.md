@@ -1,5 +1,5 @@
 ---
-title: R and the Tidyverse
+title: Walkthrough - R and the Tidyverse
 ---
 
 # R and the Tidyverse

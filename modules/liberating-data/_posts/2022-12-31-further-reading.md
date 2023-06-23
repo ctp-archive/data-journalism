@@ -6,6 +6,7 @@ title: Tips and further reading
 
 ## Dive deeper
 
+* [How and Why The COVID Tracking Project Built a Screenshot System](https://covidtracking.com/analysis-updates/how-why-covid-tracking-project-built-screenshot-system)
 * [Previously, on Arrested Development](https://apps.npr.org/arrested-development/) - Jeremy Bowers et al.
 * [Cleaner, Smarter Spreadsheets Start with Structure](https://source.opennews.org/articles/building-cleaner-smarter-spreadsheets/) - Sandhya Kambhampati
 * [The Big [CENSORED] Theory](https://pudding.cool/2022/08/censorship/) - Manyun Zhou

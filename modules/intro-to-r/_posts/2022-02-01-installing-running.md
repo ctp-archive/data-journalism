@@ -70,7 +70,7 @@ You can also store variables using an **assignment function**.
 
 Variable types (which may sound familiar to column types we discussed in the [spreadsheet module]({{ site.baseurl }}/modules/spreadsheets/what-is-a-spreadsheet/) describe the nature of the data stored in each variable.
 
-The most basic variable types are *characters*, *numerics*, *dates* and *logicals*. There are a few more, that we'll get to later.
+The most basic variable types are **characters**, **numerics**, **dates** and **logicals**. 
 
 ```R
 current_year <- 2022
@@ -80,6 +80,24 @@ current_date <- as.Date('2022-01-10')
 current_month <- 'January'
 
 is_winter <- TRUE
+```
+
+You can also store multiple values as a **vector** or **list**.
+
+```R
+primes <- c(2, 3, 5, 7, 11)
+
+months <- c('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')
+```
+
+And you can call those values by their numerical index with the double bracket notation.
+
+```R
+#return the third prime
+primes[[3]]
+
+#return the fifth month
+months[[5]]
 ```
 
 R has a lot of great, basic functionality built in. But an entire community of R developers has created a long list of packages that give R a wealth of additional tricks.

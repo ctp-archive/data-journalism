@@ -7,6 +7,15 @@ title: Tips and further reading
 ## Dive deeper
 
 * [RStudio cheatsheets](https://rstudio.com/resources/cheatsheets/)
+* [Why Some States Won’t Share Race and Ethnicity Data on Vaccinations with the CDC](https://covidtracking.com/analysis-updates/why-some-states-wont-share-race-and-ethnicity-data-on-vaccinations-with-the-cdc-and-why-thats-a-problem)
+* [The Grammar of Graphics](https://link.springer.com/book/10.1007/0-387-28695-0) - Leland Wilkinson
+* [Financial Times Visual Vocabulary](https://ft-interactive.github.io/visual-vocabulary/)
+* [A big article about wee things](https://www.propublica.org/nerds/a-big-article-about-wee-things) - Lena Groeger
+* [ggplot 2](https://ggplot2.tidyverse.org/)
+* [ggplot cheat sheet](https://github.com/rstudio/cheatsheets/blob/main/data-visualization-2.1.pdf)
+* [Bar and line graphs - R Cookbook](http://www.cookbook-r.com/Graphs/Bar_and_line_graphs_(ggplot2)/)
+* [Introduction to geofacet](https://cran.r-project.org/web/packages/geofacet/vignettes/geofacet.html)
+* [Gallery of ggplot extensions](https://exts.ggplot2.tidyverse.org/gallery/)
 
 ## Handy keyboard shortcuts
 
