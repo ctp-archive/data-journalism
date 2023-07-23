@@ -4,13 +4,13 @@ title: The scenario
 
 # The scenario
 
-![This photograph depicted an Enteric Diseases Laboratory Branch (EDLB) public health scientist, holding up a glass slide used for a run on a sequencing machine. Image courtesy CDC]({{ site.baseurl }}/img/cdc-phil-23147.png)
+***Total suggested time: 5 minutes***
 
-This module is designed to drop students immediately into an exercise focused on "systems thinking," specifically in the context of data collection.
-
-Read or provide them with the following scenario as a preface to the following hands-on group exercise.
+> **For instructors:** This module is designed to drop students immediately into an exercise focused on "systems thinking," specifically in the context of data collection. Read or provide them with the following scenario as a preface to the following hands-on group exercise.
 
 ## The Z virus
+
+![This photograph depicted an Enteric Diseases Laboratory Branch (EDLB) public health scientist, holding up a glass slide used for a run on a sequencing machine. Image courtesy CDC]({{ site.baseurl }}/img/cdc-phil-23147.png)
 
 For weeks, nations across the globe have kept close watch on the spread of a new virus spreading rapidly both within and across their borders.
 

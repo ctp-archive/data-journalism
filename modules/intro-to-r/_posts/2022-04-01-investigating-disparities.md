@@ -7,10 +7,12 @@ title: Walkthrough - Investigating disparities
 ## Jump to a section
 1. [Getting set up](#getting-set-up)
 1. [Downloading and importing the data](#downloading-and-importing-the-data)
-1. [Creating comparisons]()
-1. [Understanding joins]()
-1. [Creating clean keys for joins]()
-1. [Executing the join]()
+1. [Creating comparisons](#creating-comparisons)
+1. [Understanding joins](#understanding-joins)
+1. [Creating clean keys for joins](#creating-clean-keys-for-joins)
+1. [Executing the join](#executing-the-join)
+1. [Calculating rates](#calculating-rates)
+1. [Converting math to sentences](#disparity-ratios)
 
 ## Getting set up
 
@@ -69,17 +71,13 @@ And the math is pretty simple.
 
 But before we get to the equations – and the code – it can help to think through in plain language what we want to find out. For example:
 
-```
-How does the percentage of Hispanic COVID-19 deaths of compare to the percentage of Hispanics in Nevada overall?
-```
+**How does the percentage of Hispanic COVID-19 deaths of compare to the percentage of Hispanics in Nevada overall?**
 
 Single question, two numbers to compare. And a good, quick indicator of what a disparity might look like.
 
 Let's tackle the first part:
 
-```
-What percentage of total COVID-19 deaths in Nevada were identified as Hispanic?
-```
+**What percentage of total COVID-19 deaths in Nevada were identified as Hispanic?**
 
 We know we'll get that from our COVID data, but we can use `glimpse()` to get a quick look at which fields we want to use to make our calculation.
 
@@ -231,12 +229,14 @@ In the Tidyverse, the `left_join()` function accepts two dataframes (left and ri
 Since we're using the Tidyverse pipe syntax (`%>%`), we'll start with the left dataframe (`covid_race_match`), then feed in the righthand dataset (`census_race_match`). For the `by` parameter, we'll pass in the column names of the keys we're matching, which in this case are both named `label`.
 
 ```R
-#executing the join
+#join the census and covid data
 covid_race_joined <- covid_race_match %>% 
   left_join(census_race_match, by = c('label' = 'label')  )
 ```
 
-Now, repeating our earlier check of disparities only takes a few lines of code.
+## Calculating rates
+
+Now, repeating our earlier check of disparities only takes a few lines of code that we can apply across all racial groups.
 
 ```R
 #calculate comparison rates
@@ -248,14 +248,88 @@ covid_race_joined %>%
 
 ![Executing mutates on our combined datasets]({{ site.baseurl }}/img/wlkthr_gifs/r_comparison_rates.gif)
 
-## Calculating rates
+Let's take a closer look at those numbers and see what they show. For our purposes here, we'll focus on some of the larger racial groups to avoid the problem of **small numbers**, where tiny variations have bigger impacts.
 
-TK
+|label  | deaths| population| pop_pct| death_pct|
+|:------|------:|----------:|-------:|---------:|
+|White  |   2,719|    1,460,159|    48.2|      54.0|
+|Black  |    468|     271,744|     9.0|       9.3|
+|LatinX |   1,203|     875,798|    28.9|      23.9|
+|Asian  |    594|     246,904|     8.1|      11.8|
 
-## Converting math to sentences
+Like before, we see where Hispanic deaths don't seem to show a signficant racial disparity. Nor do Black deaths.
 
-TK
+The deaths of White and Asian residents, however, seem overrepresented here. White people made up 54% of deaths, but 48% of the population. Asian people made up about 12% of the deaths, but about 8% of the population.
 
+But because the size of the populations is so different, it's difficult to compare the two directly.
+
+But we *can* compare them if we calculate the rates of death relative to the population of the **racial group**, rather than the total. That calculation looks like this:
+
+```
+White resident deaths / white resident population
+
+Asian resident deaths / Asian resident population
+```
+
+In R, we can add in this new calculation as another column so we can see everything at once. Notice that in the code below, we don't need to use the `$` operator – we want the population estimate for each racial group, not the total.
+
+```R
+#calculate comparison rates by subgroup
+covid_race_joined %>% 
+  mutate(pop_pct = round(estimate / covid_race_joined$estimate[[1]] * 100, 1),
+         death_pct = round(deaths / covid_race_joined$deaths[[1]] * 100, 1),
+         death_rate = deaths / estimate
+  )
+
+```
+
+So are findings are `0.00186` for white residents and `0.00241` for Asian residents. What does that mean?
+
+## Disparity ratios
+
+We just calculated the **rate of COVID deaths per population**. But we can make those findings a lot more readable.
+
+Where we'd normally multiply the result by `100` to calculate the **percentage**, we're dealing with much smaller numbers here. Instead, we'll multiple them by `100,000` and round the result.
+
+```R
+#calculate comparison rates by subgroup with rounding
+covid_race_joined %>% 
+  mutate(pop_pct = round(estimate / covid_race_joined$estimate[[1]] * 100, 1),
+         death_pct = round(deaths / covid_race_joined$deaths[[1]] * 100, 1),
+         death_rate = round(deaths / estimate * 100000, 1)
+  )
+```
+
+<div class="alert alert-success"><b>PRO TIP:</b> Using <code>100,000</code> here is <b>methodological decision</b> – we could have used <code>1,000</code> or even <code>10,000</code> – but the goal is transform the resulting rate into a number that is <b>readable</b> and shows a reasonable amount of <b>precision</b>. For population comparisons, <code>100,000</code> is generally acceptable.</div>
+
+With that adjustment, we've now calculated the **rate of COVID deaths per 100,000 population**. That's still a bit of a mouthful, but we can also clearly compare the disparities we're seeing among the different populations in the state – 186 for white residents vs. 241 for Asian residents.
+
+That's compared to 166 deaths per 100,000 of the total population. So clearly Asian COVID patients are dying at a higher rate than the total population.
+
+But we can go even further. Now that we can compare rates directly, we can calculate the **disparity ratio** between any group.
+
+```
+Rate of COVID deaths per White population / Rate of COVID deaths per total population
+186 / 166
+1.12
+
+Rate of COVID deaths per Asian population / Rate of COVID deaths per total population
+241 / 166
+1.45
+
+Rate of COVID deaths per Asian population / Rate of COVID deaths per White population
+241 / 186
+1.30
+```
+
+Now we can say that, based on the data:
+* White Nevada residents are dying at rates about 12% higher than the overall population
+* Asian Nevada residents are dying at rates about 45% higher than the overall population
+* Asian Nevada residents are dying at rates about 30% higher than the overall population
+
+Any one of those findings could be a story worth exploring.
+
+And now that you know how to do it for one state, you can repeat the process for any state with similar data to find where the disparities are the highest and lowest.
 
 
 

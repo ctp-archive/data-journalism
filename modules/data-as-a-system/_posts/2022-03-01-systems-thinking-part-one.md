@@ -1,12 +1,16 @@
 ---
-title: Systems thinking - Hands-on I
+title: Individual systems
 ---
 
-# Systems thinking - Hands-on exercises
+# Individual systems
 
-The United States needs a plan for detecting the spread of the Z virus, and the goal of this exercise is for your class to draft one on paper.
+***Total suggested time: 30-45 minutes***
 
-## Part I - Division of power
+Your state needs a plan for detecting the spread of the Z virus, and the goal of this exercise is for your class to draft one on paper.
+
+## Group work: Diagramming data inputs
+
+*Suggested time: 15 minutes*
 
 Students should split into groups of two or three. Assign each group a different U.S. state.
 
@@ -20,4 +24,8 @@ Each sketch should help answer the following questions:
 * How do you make sure you're testing the enough people?
 * What do you do with the test results once you collect them?
 
-At the end of the 15 minutes, each group should take about 5 minutes to present their diagram to the class.
+## Class discussion: Share your work
+
+*Suggested time: 15-30 minutes*
+
+Each group should take about 5 minutes to present their diagram to the class.

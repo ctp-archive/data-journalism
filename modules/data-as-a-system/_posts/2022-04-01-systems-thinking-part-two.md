@@ -1,14 +1,20 @@
 ---
-title: Systems thinking - Hands-on II
+title: Combining systems
 ---
 
-# Systems thinking - Hands-on exercises
+# Combining systems
 
-The United States needs a plan for detecting the spread of the Z virus, and the goal of this exercise is for your class to draft one on paper.
+***Total Suggested time: 50 minutes***
 
-## Part II - Intergovernmental affairs
+The United States needs a plan for aggregating the results of each state's system for detecting the spread of the Z virus, and the goal of this exercise is for your class figure out how to collect that data.
+
+## Class exercise: Inputs and outputs
+
+*Suggested time: 30 minutes*
 
 As a class, use the sketches from each political division to sketch out a **new system**: a plan for how the federal government should aggregate this data from the **state level** to the **national level**.
+
+> **For instructors:** Whether students used digital or physical sketches, find a way to show as many of their individual diagrams to the whole class (post them on the board, combine them in a Google slide etc.) to aid in sketching the new, expanded system.
 
 As you work, consider the following questions as a class:
 
@@ -16,6 +22,10 @@ As you work, consider the following questions as a class:
 * How often are you collecting the data? Daily? Weekly?
 * How do the systems you set up **individually** fit **together**?
 * What changes do you need to make for them to be compatible?
+
+## Class discussion: Considering complexity
+
+*Suggested time: 20 minutes*
 
 After you've created a plan, answer the following discussion questions as a class:
 
