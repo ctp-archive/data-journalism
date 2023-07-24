@@ -1,8 +1,10 @@
 ---
-title: Advanced spreadsheets - Walkthrough
+title: 'Walkthrough: Advanced spreadsheets'
 ---
 
-# Walkthrough - Advanced spreadsheets
+# Walkthrough: Advanced spreadsheets
+
+***Total suggested time: 30 minutes***
 
 So far, you've mastered sorting, filtering, functions and other basic spreadsheet operations. But there's so much more you can do with spreadsheets with the help of a few advanced features.
 

@@ -4,6 +4,11 @@ title: What is a spreadsheet?
 
 # What is a spreadsheet?
 
+***Total suggested time: 10 minutes***
+
+## Lecture: Defining a spreadsheet
+*Suggested time: 10 minutes*
+
 Whether it's in Microsoft Excel or Google Sheets, chances are you've at least played around with spreadsheets. Maybe to make a grocery list or a monthly budget. But forget about software for a minute.
 
 A spreadsheet, at its core, is little more than a plain **text file**. What sets it apart from a big pile of **unstructured text**, though, is an encoded structure separating the data into **rows** and **columns**:

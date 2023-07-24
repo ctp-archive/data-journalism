@@ -7,7 +7,7 @@ Welcome to the COVID data journalism course-in-a-box from the COVID Tracking Pro
 
 Although the content of this course is targeted primarily toward data journalism educators on the undergraduate level, all the materials here are open for use to anyone interested in learning or teaching data journalism.
 
-If you use this content, please consider [taking our survey](https://ucsf.co1.qualtrics.com/jfe/form/SV_2mWh1W6AWqApLo2) to help us refine the content.
+If you use any components of this course, please consider [taking our survey](https://ucsf.co1.qualtrics.com/jfe/form/SV_2mWh1W6AWqApLo2) to help us refine the content.
 
 ## Course material
 

@@ -3,6 +3,11 @@ title: Interviewing your data
 ---
 
 # Interviewing your data
+***Total suggested time: 5 minutes***
+
+## Lecture: Treating data as a source
+*Suggested time: 5 minutes*
+
 As we will say a lot in this course, data is as fallible as any other source. 
 
 As journalists, our job is to **interview our data**. But we don't have to be experts to do that. Start with small questions.

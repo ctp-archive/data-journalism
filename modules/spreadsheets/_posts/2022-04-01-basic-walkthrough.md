@@ -1,8 +1,10 @@
 ---
-title: 'Spreadsheet basics - walkthrough'
+title: 'Walkthrough: Spreadsheet basics'
 ---
 
 # Walkthrough: Spreadsheet basics
+
+***Total suggested time: 30 minutes***
 
 ## Jump to a section
 
