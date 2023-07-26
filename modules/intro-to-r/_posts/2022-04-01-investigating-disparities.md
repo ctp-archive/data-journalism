@@ -1,8 +1,10 @@
 ---
-title: Walkthrough - Investigating disparities
+title: 'Walkthrough: Investigating disparities'
 ---
 
-# Walkthrough - Investigating disparities in R
+# Walkthrough: Investigating disparities in R
+
+***Total suggested time: 30 minutes***
 
 ## Jump to a section
 1. [Getting set up](#getting-set-up)

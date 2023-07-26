@@ -4,9 +4,15 @@ title: Installing and running
 
 # Installing and running
 
-There's a variety of ways to work with R, which is the actual __language__. For most of the projects here, we'll be using RStudio, a popular **integrated development environment** (IDE) that essentially functions as a user interface for the R language itself.
+***Total suggested time: 30 minutes***
 
-## Getting started with R
+> **For instructors:** Consider assigning these steps for students to complete on their own outside of class, providing technical help asynchronously.
+
+There are a variety of ways to work with R, which is the actual __language__. For most of the projects here, we'll be using RStudio, a popular **integrated development environment** (IDE) that essentially functions as a user interface for the R language itself.
+
+## On your own: Getting started with R
+
+*Suggested time: 10-15 minutes*
 
 ### Step 1: Install R
 
@@ -32,7 +38,11 @@ To make sure everything is installed correctly, navigate to wherever your applic
 
 You may see an icon for R – we won't actually be launching this application, since we're using the interface instead.
 
-## Starting a new script in RStudio
+## On your own: R basics
+
+*Suggested time: 10-15 minutes*
+
+### Starting a new script in RStudio
 
 When you open RStudio, for the first time, you'll see a few different panes in your workspace. The largest is your console, which you can use to directly enter commands using the R language.
 
@@ -54,7 +64,7 @@ At the top menu, click `File > New File > R Script` to start a new script. You'l
 
 ![Starting a new script]({{ site.baseurl }}/img/wlkthr_gifs/r_studio_start.png)
 
-## Commenting code
+### Commenting code
 
 At the top of your script, write a quick **comment** that tells you something about what your new script does.
 
@@ -65,7 +75,7 @@ Starting each line with a `#` character will ensure this line is not executed wh
     #Hands-on exercise on March 3, 2023
 ```
 
-## Storing variables
+### Storing variables
 You can also store variables using an **assignment function**.
 
 Variable types (which may sound familiar to column types we discussed in the [spreadsheet module]({{ site.baseurl }}/modules/spreadsheets/what-is-a-spreadsheet/) describe the nature of the data stored in each variable.
@@ -104,4 +114,4 @@ R has a lot of great, basic functionality built in. But an entire community of R
 
 We'll talk about some of those next.
 
-For a full (and continually updating) list of common R terms and some handy keyboard shortcuts, [check out the Tips and Further Reading page]({{ site.baseurl }}/modules/spreadsheets/further-reading/).
+For a list of common R terms and some handy keyboard shortcuts, [check out the Tips and Further Reading page]({{ site.baseurl }}/modules/spreadsheets/further-reading/).

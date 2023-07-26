@@ -1,8 +1,10 @@
 ---
-title: Walkthrough - R and the Tidyverse
+title: 'Walkthrough: R and the Tidyverse'
 ---
 
-# R and the Tidyverse
+# Walkthrough: R and the Tidyverse
+
+***Total suggested time: 30 minutes***
 
 ## Jump to a section
 1. [Starting an R project](#starting-an-r-project)

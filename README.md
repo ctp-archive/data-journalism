@@ -6,8 +6,9 @@ Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for 
 
 ## TODO
 
-- [ ] Figure out a way to print the walkthrough only as an accompanying PDF.
-- [ ] Specify what should be flipped vs. done with an instructor
+- [X] Add pacing
+- [ ] Add scripts/sample sheets
+- [ ] Proofreading
 
 ## Making changes
 

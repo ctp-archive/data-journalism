@@ -4,7 +4,7 @@ title: Combining systems
 
 # Combining systems
 
-***Total Suggested time: 50 minutes***
+***Total suggested time: 50 minutes***
 
 The United States needs a plan for aggregating the results of each state's system for detecting the spread of the Z virus, and the goal of this exercise is for your class figure out how to collect that data.
 

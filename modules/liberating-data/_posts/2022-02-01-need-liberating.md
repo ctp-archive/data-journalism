@@ -2,9 +2,11 @@
 title: When does data need 'liberating'?
 ---
 
-# When does data need 'liberating'?
+# Lecture: When does data need 'liberating'?
 
-One of the key differences between what we think of as "data" and other types of information is **structure**. That structure for spreadsheets [means rows and columns](http://127.0.0.1:4000/modules/spreadsheets/what-is-a-spreadsheet/), but there are other types you'll learn about later.
+***Total suggested time: 15 minutes***
+
+One of the key differences between what we think of as "data" and other types of information is **structure**. That structure for spreadsheets [means rows and columns]({{ site.baseurl }}/modules/spreadsheets/what-is-a-spreadsheet/), but there are other types you'll learn about later.
 
 When information is **unstructured**, though, we'll need to fix that if we want to perform any sort of meaningful analysis on it.
 
@@ -16,7 +18,7 @@ It means making **choices**. We have to be mindful of how those choices can impa
 
 There are three primary reasons why liberating data might be necessary.
 
-## The data you want does not exist.
+## 1. The data you want does not exist.
 
 Although our world is swimming in data, you'll find quickly that there are aspects of our society that just aren't tracked. Sometimes what's **not tracked** is pretty important.
 
@@ -28,7 +30,7 @@ Consider, for example, the 2012 USA Today series [Ghost Factories](https://web.a
 
 So the reporting team tested the sites on their own.
 
-## The data you want exists, but is encumbered.
+## 2. The data you want exists, but is encumbered.
 
 What if we wanted to analyze the thousands of presidential appointees scattered across the U.S. government?
 
@@ -38,7 +40,7 @@ To analyze this data, journalists had to literally free it from these clunky for
 
 With the data in hand, New York Times reporter Annie Lowery was able to [reveal powerful insights](https://www.nytimes.com/2013/01/09/us/politics/under-obama-a-skew-toward-male-appointees.html) into the nature of these political positions, including the [gender imbalance](https://archive.nytimes.com/www.nytimes.com/interactive/2013/01/08/us/politics/women-in-the-obama-administration.html) in some cabinet departments.
 
-## The data you want exists, but is incomplete.
+## 3. The data you want exists, but is incomplete.
 
 In the five-year period from 2018 to 2022, police officers in the U.S. shot and killed more than 5,000 people.
 
@@ -50,7 +52,7 @@ In this case, the data is tracked, but it's missing too much information for it 
 
 Tracking this data takes an enormous effort on the part of the reporting team, but it provides revelatory insights into a problem that continues to make headlines.
 
-## Retain the existing structure of our world
+## Retaining the existing structure of our world
 
 Consider this note from the Post's Fatal Force Database methodology:
 

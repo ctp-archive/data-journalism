@@ -4,7 +4,7 @@ title: When systems fail
 
 # When systems fail
 
-***Total Suggested time: 45 minutes***
+***Total suggested time: 45 minutes***
 
 ## Class discussion: Fixing flawed systems
 

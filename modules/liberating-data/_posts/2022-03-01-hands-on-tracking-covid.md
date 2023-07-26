@@ -1,10 +1,16 @@
 ---
-title: Hands-on - Tracking COVID by state
+title: Tracking COVID by state
 ---
 
 # Hands-on - Tracking COVID by state
 
-## The scenario
+***Total suggested time: 60 minutes***
+
+## Lecture: The scenario
+
+*Total suggested time: 1-2 minutes*
+
+> **For instructors:** Read or provide students with the following scenario as a preface to the following hands-on group exercise.
 
 With COVID-19 on the rise, your statewide news organization has decided to build a **system** for tracking cases and other data provided by state officials online.
 
@@ -12,11 +18,13 @@ One of the journalists on your team built an automated process to capture your s
 
 It's now up to your team to figure out how to record the data.
 
-## Step 1: Download and launch the screenshot viewer
+## Group work: Structuring the data
 
-Students should split up into three to five groups and select a state from the dropdown below to download the corresponding zip file:
+*Total suggested time: 5-10 minutes*
+
+Students should split up into three to five groups and select a single state from the dropdown below to download the corresponding zip file:
 <div class="dropdown text-center">
-  <button class="btn btn-secondary dropdown-toggle"
+  <button class="btn btn-primary dropdown-toggle"
           type="button" id="dropdownMenu1" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
     Select a state
@@ -37,8 +45,6 @@ Open the HTML file in your preferred Web browser. You should see the image displ
 
 ![]({{ site.baseurl }}/img/wlkthr_gifs/screenshot_viewer_example.jpeg)
 
-## Step 2: Structure the data
-
 In 5-10 minutes as a group, students should [open a new Google Sheet](https://sheet.new) and create two sheets with the following names:
 * data
 * methodology
@@ -51,7 +57,9 @@ Consider:
 
 Use `methodology` sheet to keep notes describing how you're capturing your data. List each of your fields and include a short description. You can also provide any other details of the decisions you made.
 
-## Step 3: Capture the data
+## Group work: Capturing the data
+
+*Total suggested time: 15-20 minutes*
 
 When you've finished with the Day 1 screenshot, take 15-20 minutes to move through next 30 days worth of screenshots to capture the remainder of the data.
 
@@ -60,13 +68,17 @@ Questions to keep in mind as you work:
 * What happens when state officials change how data points are counted?
 * How do the number of data points collected and reported on Day 30 compare to Day 1?
 
-## Step 4: Write up your findings
+## Group work: Write up your findings
+
+*Total suggested time: 5 minutes*
 
 Your editor wants to know what you've found.
 
 As a group, take about 10 minutes to use the data you've collected to craft a two- to three-sentence summary about the first 30 days of COVID-19 tracking in your state.
 
-## Discussion
+## Class discussion: Sharing your findings
+
+*Total suggested time: 20 minutes*
 
 As a class, students should share their summaries and discuss:
 

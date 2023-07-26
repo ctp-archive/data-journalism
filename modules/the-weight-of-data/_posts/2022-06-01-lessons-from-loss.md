@@ -4,29 +4,23 @@ title: Lessons from loss
 
 # Learning from loss
 
-Despite only operating for part of the pandemic, the impacts of the COVID Tracking project were far reaching. But was the success of the project just a product of the unique circumstances of COVID-19?
+***Total suggested time: 50 minutes***
 
-The goal of these exercises is to extract the broader lessons of the COVID Tracking Project.
+After students have listened to part 3 of the podcast, devote all or a portion of the next class to guided discussion.
 
-## Before class
+## Class discussion: Evaluating the model
 
-On their own, students should listen to the final episode of the COVID Tracking Project podcast from Reveal, at the Center for Investigative Reporting:
+*Suggested time: 20 minutes*
 
-* [COVID Tracking Project Part 3](https://revealnews.org/podcast/the-covid-tracking-project-part-3/)
-
-Students should be prepared to discuss what they learned from the episode in class.
-
-## In class
-
-### Evaluating the model
-
-After students have listened to the podcast on their own, spend the first portion of the next meeting answering the following questions as a class:
+Spend the first portion of the next meeting answering the following questions as a class:
 
 * When do you think the COVID Tracking Project should have **shut down**?
 * What made the COVID Tracking project **successful**?
 * Could the techniques of the COVID Tracking Project ever be **replicated**?
 
-### Expanding the model
+## Class/group discussion: Expanding the model
+
+*Suggested time: 30 minutes*
 
 As a class or in small groups, task students with brainstorming what other types of topics the data collection model of the COVID Tracking Project could be used to track.
 

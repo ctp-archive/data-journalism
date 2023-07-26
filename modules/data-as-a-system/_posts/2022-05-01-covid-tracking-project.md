@@ -4,7 +4,7 @@ title: The COVID Tracking Project
 
 # The COVID Tracking Project
 
-***Total Suggested time: 100 minutes***
+***Total suggested time: 100 minutes***
 
 Launched in March 2020, the COVID Tracking Project was a volunteer-powered data journalism project to count case and testing information on COVID-19 from every state in country.
 
