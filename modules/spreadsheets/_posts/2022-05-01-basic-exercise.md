@@ -9,7 +9,7 @@ title: 'Asking small questions'
 ## Class exercise: Examining highs and lows
 *Suggested time: 15 minutes*
 
-With the data you've prepared, see if you can answer the following **[small questions](http://127.0.0.1:4000/modules/spreadsheets/interviewing-your-data/)** as a class:
+With the data you've prepared, see if you can answer the following **[small questions]({{ site.baseurl }}/modules/spreadsheets/interviewing-your-data/)** as a class:
 
 * During the first year of the pandemic, when did new COVID cases peak in New York?
 * When did the spread of the virus seem to be ebbing?

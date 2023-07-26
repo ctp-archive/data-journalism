@@ -14,7 +14,7 @@ In these oral histories, you'll hear first-hand about the impacts of the project
 
 *Suggested time: 30-45 minutes each*
 
-On their own, students should review **two to three oral histories of their choice** available online through the COVID Tracking Project Archive at the University of California, San Fransisco Archives and Special Collections:
+On their own, students should review **two to three oral histories of their choice** available online through the COVID Tracking Project Archive at the University of California, San Francisco Archives and Special Collections:
 * [50+ oral histories from the COVID Tracking Project](https://calisphere.org/collections/28036/)
 
 As they listen, students should consider the following questions and be prepared to share their thoughts with the class:

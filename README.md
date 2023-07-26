@@ -9,7 +9,9 @@ Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for 
 - [X] Add pacing
 - [ ] Add scripts/sample sheets
 - [ ] Proofreading
-
+- [ ] Check links
+- [ ] Archive all external links
+ 
 ## Making changes
 
 To make changes to the template itself, a good place to start is the [`_layouts`](/_layouts), [`_includes`](/_includes) and [`css`](/css) directories. These directories contain all the layout and style files used.
@@ -25,6 +27,22 @@ Push to the `gh-pages` fork.
 Custom-created course materials are stored in the [`materials`](/materials) directory. Other source materials will be linked directly to the CTP Archive where possible.
 
 When linking images, make sure to use `{{ site.baseurl }}` to work with both testing and the deployed version.
+
+## Style notes
+
+### Credit style for tips and further reading
+* [Linked title]()
+: Author, *Publication*
+
+### Instructor note boxes
+```
+> *For instructors:* TKTK
+```
+
+### Pro tip boxes
+```
+> *PROTIP:* TKTK
+```
 
 ## Running locally
 Local testing done via Jekyll, which can be installed [with the instructions here](https://nicolas-van.github.io/bootstrap-4-github-pages/#run-jekyll-on-your-computer-to-speed-up-testing).

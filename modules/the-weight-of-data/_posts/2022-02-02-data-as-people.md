@@ -6,7 +6,7 @@ title: Data as people
 
 ***Total suggested time: 50 minutes***
 
-When you're in the the thick of an analysis, trying to wrangle messy data and often counterintuitive technology, it can be easy to forget what the numbers actually represent. In many cases, the data you're working with – cases, hospitalizations, car crashes, overdoses, shootings – is about *people* and *their lives*.
+When you're in the thick of an analysis, trying to wrangle messy data and often counterintuitive technology, it can be easy to forget what the numbers actually represent. In many cases, the data you're working with – cases, hospitalizations, car crashes, overdoses, shootings – is about *people* and *their lives*.
 
 The goal of this exercise is to back away from the *technical* part of data journalism and think about the **meaning** numbers can convey.
 
@@ -35,15 +35,15 @@ At the end of the 10 minutes, each group should take about 5 minutes to share th
 
 When each group has presented, answer the following questions as a class:
 * Which of these portrayals of the COVID-19 death toll **resonate** most with you?
-* How does the use of **emotional appeal** impact the effectivness of the communication?
+* How does the use of **emotional appeal** impact the effectiveness of the communication?
 * How can the use of emotional appeal **interfere** with the underlying message?
 
 ## Class exercise: Updating the death toll
 
 *Suggested time: 20 minutes*
 
-All three of these portryals of the COVID-19 death toll are dated. Give students a few minutes on their own to look up the most updated COVID-19 death toll they can find and share both the **number** and the **source of the data** with the class.
+All three of these portrayals of the COVID-19 death toll are dated. Give students a few minutes on their own to look up the most updated COVID-19 death toll they can find and share both the **number** and the **source of the data** with the class.
 
 Then, as a class:
-* Select the death toll figure you think is most **reliable**, based the source and any other information students find during their brief research.
+* Select the death toll figure you think is most **reliable**, based on the source and any other information students find during their brief research.
 * Use what you've discussed during your analysis of the previous portrayals of the death toll to brainstorm ideas for a new one, based on the updated number

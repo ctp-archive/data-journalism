@@ -6,7 +6,7 @@ title: Combining systems
 
 ***Total suggested time: 50 minutes***
 
-The United States needs a plan for aggregating the results of each state's system for detecting the spread of the Z virus, and the goal of this exercise is for your class figure out how to collect that data.
+The United States needs a plan for aggregating the results of each state's system for detecting the spread of the Z virus, and the goal of this exercise is for your class to figure out how to collect that data.
 
 ## Class exercise: Inputs and outputs
 

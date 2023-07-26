@@ -20,7 +20,7 @@ Just like you did in small groups with individual states, start with a **structu
 * What does each row of data observe?
 * For each row/observation, what fields are you capturing in each column?
 
-Use `methodology` sheet to keep notes describing how you're capturing your data. List each of your fields and include a short description. You can also provide any other details of the decisions you make.
+Use the `methodology` sheet to keep notes describing how you're capturing your data. List each of your fields and include a short description. You can also provide any other details of the decisions you make.
 
 ## Class discussion: How does it compare?
 

@@ -34,7 +34,7 @@ So the reporting team tested the sites on their own.
 
 What if we wanted to analyze the thousands of presidential appointees scattered across the U.S. government?
 
-The federal government *absolutely* tracks that data – [publishes it in a book](https://bookstore.gpo.gov/catalog/plum-book) every four years, in fact. But prior to 2012, it was only contained PDF and poorly structured HTML.
+The federal government *absolutely* tracks that data – [publishes it in a book](https://bookstore.gpo.gov/catalog/plum-book) every four years, in fact. But prior to 2012, it was only contained in PDF and poorly structured HTML.
 
 To analyze this data, journalists had to literally free it from these clunky formats.
 

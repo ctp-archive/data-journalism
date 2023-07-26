@@ -29,7 +29,7 @@ title: Tips & further reading
     <div class="card-header" role="tab" id="headingTwo">
       <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">For Mac</a></h5>
     </div>
-    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <div id="collapseTwo" class="collapse show" role="tabpanel" aria-labelledby="headingTwo">
       <div class="card-body">
         <ul>
         	<li><kbd> CMD + ; </kbd>&ensp;Insert the current date into the selected cell</li>
@@ -46,6 +46,9 @@ title: Tips & further reading
 
 
 ## Dive deeper
-* **[Excel Magic](https://sites.google.com/view/mj-basic-data-academy/excel-magic?authuser=0)** – Mary Jo Webster/The Star Tribune
-* **[Google Sheets function list](https://support.google.com/docs/table/25273?hl=en&ref_topic=1361471)** – Google
-* **[The Quartz Guide to Bad Data](https://github.com/Quartz/bad-data-guide)** – Quartz staff
+* [Excel Magic](https://sites.google.com/view/mj-basic-data-academy/excel-magic?authuser=0)
+: Mary Jo Webster, *Data Journalism Academy*
+* [Google Sheets function list](https://support.google.com/docs/table/25273?hl=en&ref_topic=1361471)
+: Staff, *Google*
+* [The Quartz Guide to Bad Data](https://github.com/Quartz/bad-data-guide)
+: Staff, *Quartz*

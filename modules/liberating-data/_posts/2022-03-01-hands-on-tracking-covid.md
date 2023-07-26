@@ -55,13 +55,13 @@ Consider:
 * What does each row of data observe?
 * For each row/observation, what fields are you capturing in each column?
 
-Use `methodology` sheet to keep notes describing how you're capturing your data. List each of your fields and include a short description. You can also provide any other details of the decisions you made.
+Use the `methodology` sheet to keep notes describing how you're capturing your data. List each of your fields and include a short description. You can also provide any other details of the decisions you made.
 
 ## Group work: Capturing the data
 
 *Total suggested time: 15-20 minutes*
 
-When you've finished with the Day 1 screenshot, take 15-20 minutes to move through next 30 days worth of screenshots to capture the remainder of the data.
+When you've finished with the Day 1 screenshot, take 15-20 minutes to move through the next 30 days worth of screenshots to capture the remainder of the data.
 
 Questions to keep in mind as you work:
 * The system your team built for capturing screenshots may not be perfect. How do you deal with data collection issues?

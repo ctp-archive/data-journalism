@@ -14,7 +14,7 @@ title: 'Walkthrough: Investigating disparities'
 1. [Creating clean keys for joins](#creating-clean-keys-for-joins)
 1. [Executing the join](#executing-the-join)
 1. [Calculating rates](#calculating-rates)
-1. [Converting math to sentences](#disparity-ratios)
+1. [Disparity ratios](#disparity-ratios)
 
 ## Getting set up
 
@@ -40,13 +40,13 @@ library(tidyverse)
 
 The data we'll be working with for this walkthrough comes from the COVID Tracking Project's [race and ethnicity file for Nevada](https://explore.covidtracking.com/state/nv/crdt/index.html), portions of which we've already used.
 
-Download the CSV file here and save it to `data` folder in the R project directory you created above.
+Download the CSV file here and save it to the `data` folder in the R project directory you created above.
 
 <form method="get" action="https://explore.covidtracking.com/download/state/nv/nv-race-ethnicity.csv" class="text-center">
   <button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Download the data</button>
 </form>
 
-Once our file is saved, we'll load it in into a new dataframe called `covid_race_nv` with a function from our Tidyverse package.
+Once our file is saved, we'll load it into a new dataframe called `covid_race_nv` with a function from our Tidyverse package.
 
 ```R
 #load in our us covid data
@@ -73,7 +73,7 @@ And the math is pretty simple.
 
 But before we get to the equations – and the code – it can help to think through in plain language what we want to find out. For example:
 
-**How does the percentage of Hispanic COVID-19 deaths of compare to the percentage of Hispanics in Nevada overall?**
+**How does the percentage of Hispanic COVID-19 deaths compare to the percentage of Hispanics in Nevada overall?**
 
 Single question, two numbers to compare. And a good, quick indicator of what a disparity might look like.
 
@@ -96,7 +96,7 @@ A few things to note here:
 
 ![Glimpsing the fields of our COVID data.]({{ site.baseurl }}/img/wlkthr_gifs/r_glimpse_race_eth.png)
 
-We don't actually need a complex Tidyverse chain of commands here. We just need to a few special operators R uses to access data inside our dataframe.
+We don't actually need a complex Tidyverse chain of commands here. We just need a few special operators R uses to access data inside our dataframe.
 
 The next two lines of code tell R we want the list of values from specific columns (using the `$` operator) and the value from the first row only (the `[[]] notation`). And in this case, we want essentially the same thing from two different columns.
 
@@ -130,7 +130,7 @@ The data in this simplified census table is formatted a little differently, but 
 hisp_pop <- census_race_nv$estimate[[9]]
 total_pop <- census_race_nv$estimate[[1]]
 
-#then calculate the proporation as a percentage
+#then calculate the proportion as a percentage
 round(hisp_pop / total_pop * 100, 1)
 ```
 
@@ -142,15 +142,15 @@ So:
 
 Not much of a disparity there it appears. What about the other racial groups?
 
-We could repeat these steps, but the process is a little tedious. What if we make a similar calculations for every racial group all at once?
+We could repeat these steps, but the process is a little tedious. What if we make a similar calculation for every racial group all at once?
 
 ## Understanding joins
 
-Before we get there thought, let's talk about **joins**.
+Before we get there though, let's talk about **joins**.
 
 <div class="alert alert-warning"><b>NOTE:</b> If you worked with a previous module on advanced spreadsheets, some of this might sound familiar.</div>
 
-At their core, joins in data journalism and data science (or any other field that works with databases) is just a way to link to datasets together using a common, matching field – often called a **key**.
+At their core, joins in data journalism and data science (or any other field that works with databases) is just a way to link two datasets together using a common, matching field – often called a **key**.
 
 <div class="alert alert-success"><b>PRO TIP:</b> Joins like these will only match if the two terms are EXACTLY equal – that means they have to be equal data types too.</div>
 
@@ -188,7 +188,7 @@ And that's where `pivot_longer()` can help – it basically just transposes the 
 * `names_to` - name of the new column where your old column names go
 * `values_to` - name of the new column where the values in your old columns go
 
-In our code, we'll define `cols` using another convenience function called `everything()` that returns *all* the columns at once. We'll also use an optional parameter, `names_prefix`, to remove the unnecssary `Deaths_` text from our race/ethnicity label.
+In our code, we'll define `cols` using another convenience function called `everything()` that returns *all* the columns at once. We'll also use an optional parameter, `names_prefix`, to remove the unnecessary `Deaths_` text from our race/ethnicity label.
 
 ```R
 #simplify and reformat the covid data
@@ -259,7 +259,7 @@ Let's take a closer look at those numbers and see what they show. For our purpos
 |LatinX |   1,203|     875,798|    28.9|      23.9|
 |Asian  |    594|     246,904|     8.1|      11.8|
 
-Like before, we see where Hispanic deaths don't seem to show a signficant racial disparity. Nor do Black deaths.
+Like before, we see where Hispanic deaths don't seem to show a significant racial disparity. Nor do Black deaths.
 
 The deaths of White and Asian residents, however, seem overrepresented here. White people made up 54% of deaths, but 48% of the population. Asian people made up about 12% of the deaths, but about 8% of the population.
 
@@ -302,7 +302,7 @@ covid_race_joined %>%
   )
 ```
 
-<div class="alert alert-success"><b>PRO TIP:</b> Using <code>100,000</code> here is <b>methodological decision</b> – we could have used <code>1,000</code> or even <code>10,000</code> – but the goal is transform the resulting rate into a number that is <b>readable</b> and shows a reasonable amount of <b>precision</b>. For population comparisons, <code>100,000</code> is generally acceptable.</div>
+<div class="alert alert-success"><b>PRO TIP:</b> Using <code>100,000</code> here is a <b>methodological decision</b> – we could have used <code>1,000</code> or even <code>10,000</code> – but the goal is to transform the resulting rate into a number that is <b>readable</b> and shows a reasonable amount of <b>precision</b>. For population comparisons, <code>100,000</code> is generally acceptable.</div>
 
 With that adjustment, we've now calculated the **rate of COVID deaths per 100,000 population**. That's still a bit of a mouthful, but we can also clearly compare the disparities we're seeing among the different populations in the state – 186 for white residents vs. 241 for Asian residents.
 

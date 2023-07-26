@@ -50,7 +50,7 @@ In this case, the `index` is unnecessary since the table we want is the only one
 
 We should have all the information we need.
 
-Open a new Google Sheet by typing [sheet.new](http://sheet.new/) in the address bar of a new tab. Don't forget to rename it and store it in a easy-to-find location on your Google Drive.
+Open a new Google Sheet by typing [sheet.new](http://sheet.new/) in the address bar of a new tab. Don't forget to rename it and store it in an easy-to-find location on your Google Drive.
 
 In the first cell (A1) enter the following function and parameters:
 
@@ -72,7 +72,7 @@ This is incredibly useful for loading in live updating data on the fly. But this
 
 In your A1 cell, you should no longer see your `IMPORTHTML` formula in the function bar – just plain old data!
 
-> **PRO-TIP** Remember how to freeze your header row and navigate around the spreadheet? Review what you learned in the [previous submodule]({{ site.baseurl }}/modules/spreadsheets/basic-walkthrough/#navigating-the-spreadsheet).
+> **PRO-TIP** Remember how to freeze your header row and navigate around the spreadsheet? Review what you learned in the [previous submodule]({{ site.baseurl }}/modules/spreadsheets/basic-walkthrough/#navigating-the-spreadsheet).
 
 ## Import population data
 
@@ -244,7 +244,7 @@ That's  because a few of your facility names are repeated! `WHITNEY CENTER`, for
 
 You can click the `X` button in the builder to remove the field and start over.
 
-It's important to know that the pivot table is effectively cordoned off – nothing you do on this tab will impact your source data. That makes it an effective sandbox for exploring the data quickly and axiety-free!
+It's important to know that the pivot table is effectively cordoned off – nothing you do on this tab will impact your source data. That makes it an effective sandbox for exploring the data quickly and anxiety-free!
 
 ## Using pivot tables to create crosstabs
 
@@ -303,7 +303,7 @@ Suppose, for example, you want to explore the relationship between city populati
 
 Because the population is the same across city, we can introduce another type of aggregation function that only uses the population once (like `MAX`, `MIN`, etc).
 
-Starting with clear pivot table, drag `city` into "Rows", then `population` and `resident_deaths` into "Values."
+Starting with a clear pivot table, drag `city` into "Rows", then `population` and `resident_deaths` into "Values."
 
 In the `population` box, set "Summarize by" to the `MAX` function. You can leave `resident_deaths` with the default `SUM`.
 

@@ -22,7 +22,7 @@ Download and install the [latest version of R from CRAN](https://cran.rstudio.co
 
 No need to change any of the settings in the default install wizard.
 
-*NOTE: If you're on a Mac, and you get an error about not being able to open an application downloaded from the Internet, right-click (or control-click) on the file and click "Open" on the dialogue to override Apple's sometimes finicky security settings.*
+*NOTE: If you're on a Mac, and you get an error about not being able to open an application downloaded from the Internet, right-click (or control-click) on the file and click "Open" on the dialog to override Apple's sometimes finicky security settings.*
 
 ### Step 2: Install RStudio
 
@@ -34,7 +34,7 @@ Download and install the latest version of RStudio (the website should automatic
 
 ### Step 3: Open RStudio
 
-To make sure everything is installed correctly, navigate to wherever your applications are stored and launching RStudio.
+To make sure everything is installed correctly, navigate to wherever your applications are stored and launch RStudio.
 
 You may see an icon for R – we won't actually be launching this application, since we're using the interface instead.
 

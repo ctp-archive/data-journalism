@@ -163,7 +163,9 @@ Let's tackle `LEFT` and `RIGHT` first.
 =RIGHT(string, [number_of_characters])
 ```
 
-These functions take two arguments, `string` which is the sequence of characters we want to work with. In this case, that's our eight-character "date". The second argument is a number that tells the function how many of the string's characters you want to extract, with either the left (the beginning) or the right (the end) as a starting point.
+These functions take two arguments. One – `string` – is the sequence of characters we want to work with. In this case, that's our eight-character "date".
+
+The second argument is a number that tells the function how many of the string's characters you want to extract, with either the left (the beginning) or the right (the end) as a starting point.
 
 ```
 =LEFT(12345678, 4)
@@ -315,9 +317,9 @@ Notice that the adjoining `death` column has no data – the state hasn't report
 
 Sheets performs the fill down operation based on the number of rows in the adjoining columns. That's why, in our other columns, it didn't keep updating each row all the way down through our 700-odd blank rows.
 
-We'll have to fill down a slightly different way this time by higlighting all the cells we want to update.
+We'll have to fill down a slightly different way this time by highlighting all the cells we want to update.
 
-If you want, you can do this by clicking that blue square in the corner of your `positive_new` cell an dragging aaaaaaallll the way down to the bottom of your sheet. But that's annoying. And when your data gets bigger, it's way too time consuming.
+If you want, you can do this by clicking that blue square in the corner of your `positive_new` cell and dragging aaaaaaallll the way down to the bottom of your sheet. But that's annoying. And when your data gets bigger, it's way too time consuming.
 
 Instead, we'll use a few keyboard shortcuts.
 

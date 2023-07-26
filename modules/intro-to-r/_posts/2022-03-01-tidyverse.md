@@ -32,7 +32,7 @@ Now, when you create a new script with `File > New File > R script`, then 'Save 
 
 You can see all your project files in the "Files" pane in the bottom right.
 
-You can also create new files and folder in the "Files" pane directly. Give it a try by creating a new folder in our directory we'll name `data`.
+You can also create new files and folders in the "Files" pane directly. Give it a try by creating a new folder in our directory we'll name `data`.
 
 ![Creating a new folder in the project folder]({{ site.baseurl }}/img/wlkthr_gifs/r_new_folder.gif)
 
@@ -72,7 +72,7 @@ library(tidyverse)
 
 We'll be working with the COVID Tracking Project’s full data on testing and outcomes in the state of New York.
 
-Download the CSV file here and save it to `data` folder in the R project directory you created above.
+Download the CSV file here and save it to the `data` folder in the R project directory you created above.
 
 <form method="get" action="https://explore.covidtracking.com/download/state/ny.csv" class="text-center">
   <button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Download the data</button>
@@ -82,7 +82,7 @@ If this looks familiar, you may remember it from the module on working with spre
 
 You can review [the full data dictionary here](https://explore.covidtracking.com/field-definitions/index.html).
 
-We're going to import the data on New York COVID cases using the `read_csv()` fucnction from the Tidyverse package. This function loads comma-seperated value files into a special type of R variable called a **dataframe** – basically just a table with rows and columns.
+We're going to import the data on New York COVID cases using the `read_csv()` function from the Tidyverse package. This function loads comma-separated value files into a special type of R variable called a **dataframe** – basically just a table with rows and columns.
 
 Here's the command.
 
@@ -95,7 +95,7 @@ Again, you can execute the code by clicking "Run" or with <kbd>CMD</kbd> + <kbd>
 
 This stores the data in a brand new dataframe variable named `covid_ny`.
 
-Take note that in your "Environment" pane (by default in the top right), you should be able to see your dataframe with 371 rows (or observerations) and 56 columns (or variables).
+Take note that in your "Environment" pane (by default in the top right), you should be able to see your dataframe with 371 rows (or observations) and 56 columns (or variables).
 
 You can click on the dataset in your environment window to view it in a new tab in your "Source" pane, much like you would in Excel or some other spreadsheet software.
 
@@ -105,11 +105,11 @@ You can click on the dataset in your environment window to view it in a new tab 
 
 For our analysis here, we'll be using a Tidyverse specialty: the "pipe".
 
-Pipes – which look like this `%>%` – to chain together the output of functions from one line to the next line, allowing you build complex operation with just a few lines of code.
+Pipes – which look like this `%>%` – to chain together the output of functions from one line to the next line, allowing you to build complex operations with just a few lines of code.
 
 <div class="alert alert-success"><b>PRO TIP:</b> If you want to save some time typing, you can use the keyboard shortcut <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> to add a pipe.</div>
 
-As an example, let's check to make sure we got it all the data when we loaded it.
+As an example, let's check to make sure we got all the data when we loaded it.
 
 ```R
 #how many rows do we have?

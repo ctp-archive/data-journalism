@@ -8,7 +8,7 @@ title: When systems fail
 
 ## Class discussion: Fixing flawed systems
 
-After students have listened to the podcast on their own, devote all or a portion of the next class to a guided discussion about the content, using all or some of following questions in class.
+After students have listened to the podcast on their own, devote all or a portion of the next class to a guided discussion about the content, using all or some of the following questions in class.
 
 > **For instructors:** As you guide the discussion, try steering portions of the conversation from "understanding" questions to "evaluation" questions to build the complexity of students' learning.
 

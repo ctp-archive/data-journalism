@@ -3,7 +3,7 @@ layout: index
 published: true
 ---
 
-Welcome to the COVID data journalism course-in-a-box from the COVID Tracking Project Archive, housed at the University of California, San Fransisco. This course contains five modules aimed at using content from the COVID Tracking Project to learn the conceptual foundations of data journalism.
+Welcome to the COVID data journalism course-in-a-box from the [COVID Tracking Project archive](https://oac.cdlib.org/findaid/ark:/13030/c8cc17ft/), housed at the University of California, San Francisco. This course contains **five modules** aimed at using content from the COVID Tracking Project to learn the conceptual foundations of data journalism.
 
 Although the content of this course is targeted primarily toward data journalism educators on the undergraduate level, all the materials here are open for use to anyone interested in learning or teaching data journalism.
 
@@ -23,7 +23,7 @@ Liberating data
 : Data doesn’t always arrive ready to analyze. A data journalist’s job often involves collecting data from multiple sources or transforming it from unwieldy formats to something more structured.
 
 Intro to R
-: The statistical programming language R is quickly becoming one of the standard tools for data journalists around the world. Its use can help us expand our understand of data and how to analyze it.
+: The statistical programming language R is quickly becoming one of the standard tools for data journalists around the world. Its use can help us expand our understanding of data and how to analyze it.
 
 The weight of data
 : Data is more than just numbers – it’s an attempt to quantify often emotional aspects of humanity, like loss and illness. Data journalists should be prepared for the implications of working with and presenting these numbers, both on themselves and their audiences.
@@ -42,7 +42,7 @@ Each of this course's five modules contains a mix of submodules that include:
 * group work
 * walkthroughs
 * class exercises
-* clasa discussions
+* class discussions
 
 Each module also includes a setup page for instructors and tips/further reading for students.
 
