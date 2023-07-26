@@ -30,25 +30,21 @@ The weight of data
 
 ## Course structure
 
-Modules are designed to take about a week, assuming about two hours of class meetings each week.
-
-Depending on the content, each of this course's five modules contains a mix of submodules.
-
-The setup
-: Lays out module objectives, the tools you'll need and the details on any datasets used in the modules
-
-Walkthroughs
-: Step-by-step instructions for working with data or tools for students to work through on their own asynchronously or with guided instruction in class
-
-Exercises
-: Questions and discussion tackled as a class or tasks students complete and answer individually or in small groups with new data or novel archival material.
-
-Tips & further reading
-: A handy page to bookmark for assorted cheatsheets and extra resources on the topic
+Modules are designed to take one to two weeks, assuming about two hours of class meetings each week.
 
 The content in this course is designed to be used either:
 * From start to finish in a **full, standalone course** 
-* As indivudual modules integrated into an **existing course**.
+* As individual modules integrated into an **existing course**.
+
+Each of this course's five modules contains a mix of submodules that include:
+* lectures
+* solo work
+* group work
+* walkthroughs
+* class exercises
+* clasa discussions
+
+Each module also includes a setup page for instructors and tips/further reading for students.
 
 ## Want to contribute?
 
