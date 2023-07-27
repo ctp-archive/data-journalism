@@ -31,4 +31,6 @@ Spreadsheet software allows us to add an additional layer of structure with **co
 * **Dates/times** – Some combination of a date and/or time. There are lots of formats! Spreadsheet software can perform arithmetic on datetime values.
 * **Logicals** – Binary values like yes/no or 1/0. These are typically interpreted as true or false.
 
-> **PRO-TIP** The column types of your data may not always be obvious! When you open or import your data, spreadsheet software will often make "guesses" about your data based on a small sample of it.
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> The column types of your data may not always be obvious! When you open or import your data, spreadsheet software will often make "guesses" about your data based on a small sample of it..
+</div>

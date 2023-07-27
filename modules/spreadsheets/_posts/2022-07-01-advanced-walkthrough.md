@@ -1,12 +1,16 @@
 ---
-title: 'Walkthrough: Advanced spreadsheets'
+title: 'Walkthrough: Joins and pivots'
 ---
 
-# Walkthrough: Advanced spreadsheets
+# Walkthrough: Joins and pivots
 
 ***Total suggested time: 30 minutes***
 
-So far, you've mastered sorting, filtering, functions and other basic spreadsheet operations. But there's so much more you can do with spreadsheets with the help of a few advanced features.
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> The following exercises are designed to be followed step by step as a class, with the instructor as the facilitator. Instructors can use this walkthrough page as a reference while they follow along. Alternatively, instructors may choose to assign this walkthrough for students to complete on their own in advance of the exercises and discussion in the following submodules.
+</div>
+
+So far, you've mastered sorting, filtering, functions and other basic spreadsheet operations. But there's so much more you can do with spreadsheets with the help of a few more advanced features.
 
 ## Jump to a section
 
@@ -60,7 +64,9 @@ In the first cell (A1) enter the following function and parameters:
 
 After a few seconds of load time, you'll see the data fill in to your sheet *exactly* as it appeared on the web page.
 
-> **PRO-TIP** You may find that trying this on other state sites will give you an error that the URL's contents exceeded maximum size. That's an unfortunate drawback of using Google's free tools!
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> You may find that trying this on other state sites will give you an error that the URL's contents exceeded maximum size. That's an unfortunate drawback of using Google's free tools!.
+</div>
 
 This is incredibly useful for loading in live updating data on the fly. But this data shouldn't change, so lets do a quick copy/paste to make sure our data stays as is.
 
@@ -72,7 +78,9 @@ This is incredibly useful for loading in live updating data on the fly. But this
 
 In your A1 cell, you should no longer see your `IMPORTHTML` formula in the function bar – just plain old data!
 
-> **PRO-TIP** Remember how to freeze your header row and navigate around the spreadsheet? Review what you learned in the [previous submodule]({{ site.baseurl }}/modules/spreadsheets/basic-walkthrough/#navigating-the-spreadsheet).
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Remember how to freeze your header row and navigate around the spreadsheet? Review what you learned in the <a href="{{ site.baseurl }}/modules/spreadsheets/basic-walkthrough/#navigating-the-spreadsheet" class="alert-link">previous submodule</a>.
+</div>
 
 ## Import population data
 
@@ -86,7 +94,9 @@ Download a simplified version of the data here.
 
 Then import the data into your existing spreadsheet by choosing `Insert new sheet(s)` in your import options.
 
-> **PRO-TIP** Stuck on how to import? Review what you learned in the [previous submodule]({{ site.baseurl }}/modules/spreadsheets/basic-walkthrough/#import-the-file).
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Stuck on how to import? Review what you learned in the <a href="{{ site.baseurl }}/modules/spreadsheets/basic-walkthrough/#import-the-file" class="alert-link">previous submodule</a>.
+</div>
 
 ## Data dictionary
 
@@ -198,7 +208,9 @@ When we do a fill down (or autocomplete when prompted by Sheets), you should see
 
 Success! Well, sort of.
 
-> **PRO-TIP** Getting multiple errors? Review your formula carefully. Did you use the correct search key? Did you provide the correct range, with the data you want to match between sheets in the first position?
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Getting multiple errors? Review your formula carefully. Did you use the correct search key? Did you provide the correct range, with the data you want to match between sheets in the first position?.
+</div>
 
 Do you spot any errors? How about on rows where the facility is located in Mystic, Conn.? Or Southport? Or a town called "MARLBOROUG H"?
 

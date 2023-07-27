@@ -11,6 +11,7 @@ Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for 
 - [ ] Proofreading
 - [ ] Check links
 - [ ] Archive all external links
+- [ ] Add instructor note to walkthrough
  
 ## Making changes
 
@@ -30,18 +31,31 @@ When linking images, make sure to use `{{ site.baseurl }}` to work with both tes
 
 ## Style notes
 
+Notes to keep styling consistent.
+
 ### Credit style for tips and further reading
 * [Linked title]()
 : Author, *Publication*
 
 ### Instructor note boxes
 ```
-> *For instructors:* TKTK
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> This message for instructors offers pedagogical guidance and tips on presenting the lesson.
+</div>
 ```
 
 ### Pro tip boxes
 ```
-> *PROTIP:* TKTK
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> This message for students offers reminders or best practices during walkthroughs and other aspects of the course. Sometimes it might <a href="#!" class="alert-link">include a link</a>.
+</div>
+```
+
+### Reminder boxes
+```
+<div class="alert alert-success" role="alert">
+    <strong>REMINDER:</strong> Specific instructions involving troubleshooting or avoiding errors and pitfalls.
+</div>
 ```
 
 ## Running locally

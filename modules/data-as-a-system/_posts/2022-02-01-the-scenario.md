@@ -6,7 +6,9 @@ title: The scenario
 
 ***Total suggested time: 5 minutes***
 
-> **For instructors:** This module is designed to drop students immediately into an exercise focused on "systems thinking," specifically in the context of data collection. Read or provide them with the following scenario as a preface to the following hands-on group exercise.
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> This module is designed to drop students immediately into an exercise focused on "systems thinking," specifically in the context of data collection. Read or provide them with the following scenario as a preface to the following hands-on group exercise.
+</div>
 
 ## The Z virus
 

@@ -24,7 +24,7 @@ Although our world is swimming in data, you'll find quickly that there are aspec
 
 [Mimi Ọnụọha](https://mimionuoha.com/about), an artist and writer whose work specializes in interrogating the impacts of technological progress, defines ["missing data sets"](https://github.com/MimiOnuoha/missing-datasets/blob/master/README.md) this way:
 
-> The word "missing" is inherently normative. It implies both a lack and an ought: something does not exist, but it should. That which should be somewhere is not in its expected place; an established system is disrupted by distinct absence. Just because some type of data doesn't exist doesn't mean it's missing, and the idea of missing data sets is inextricably tied to a more expansive climate of inevitable and routine data collection.
+> "The word "missing" is inherently normative. It implies both a lack and an ought: something does not exist, but it should. That which should be somewhere is not in its expected place; an established system is disrupted by distinct absence. Just because some type of data doesn't exist doesn't mean it's missing, and the idea of missing data sets is inextricably tied to a more expansive climate of inevitable and routine data collection."
 
 Consider, for example, the 2012 USA Today series [Ghost Factories](https://web.archive.org/web/20140824041042/http://www.usatoday.com/topic/B68DCD3E-7E3F-424A-BDA4-41077D772EA1/ghostfactories/), which found the Environmental Protection Agency failed to test and track the impacts of shuttered lead smelters on neighborhoods across the country.
 
@@ -48,7 +48,7 @@ That's not a figure the government publishes – it comes from The Washington Po
 
 In this case, the data is tracked, but it's missing too much information for it to be reliable, [as the Post explains](https://github.com/washingtonpost/data-police-shootings):
 
-> The FBI and the Centers for Disease Control and Prevention log fatal shootings by police, but officials acknowledge that their data is incomplete. Since 2015, The Post has documented more than twice as many fatal shootings by police as recorded by federal officials on average annually. That gap has widened in recent years, as the FBI in 2021 tracked only a third of departments’ fatal shootings.
+> "The FBI and the Centers for Disease Control and Prevention log fatal shootings by police, but officials acknowledge that their data is incomplete. Since 2015, The Post has documented more than twice as many fatal shootings by police as recorded by federal officials on average annually. That gap has widened in recent years, as the FBI in 2021 tracked only a third of departments’ fatal shootings."
 
 Tracking this data takes an enormous effort on the part of the reporting team, but it provides revelatory insights into a problem that continues to make headlines.
 
@@ -56,7 +56,7 @@ Tracking this data takes an enormous effort on the part of the reporting team, b
 
 Consider this note from the Post's Fatal Force Database methodology:
 
-> In this data set, The Post tracks only shootings... in which a police officer, in the line of duty, shoots and kills a civilian. The Post is not tracking deaths of people in police custody, fatal shootings by off-duty officers or non-shooting deaths in this data set.
+> "In this data set, The Post tracks only shootings... in which a police officer, in the line of duty, shoots and kills a civilian. The Post is not tracking deaths of people in police custody, fatal shootings by off-duty officers or non-shooting deaths in this data set."
 
 This decision **limits the data**. But this methodology is neither right nor wrong – it's a **choice**. And one the team is making explicit in its reporting.
 

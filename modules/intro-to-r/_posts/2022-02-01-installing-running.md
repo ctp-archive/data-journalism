@@ -6,7 +6,9 @@ title: Installing and running
 
 ***Total suggested time: 30 minutes***
 
-> **For instructors:** Consider assigning these steps for students to complete on their own outside of class, providing technical help asynchronously.
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> Consider assigning these steps for students to complete on their own outside of class, providing technical help asynchronously.
+</div>
 
 There are a variety of ways to work with R, which is the actual __language__. For most of the projects here, we'll be using RStudio, a popular **integrated development environment** (IDE) that essentially functions as a user interface for the R language itself.
 

@@ -6,6 +6,12 @@ title: 'Walkthrough: R and the Tidyverse'
 
 ***Total suggested time: 30 minutes***
 
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> The following exercises are designed to be followed step by step as a class, with the instructor as the facilitator. Instructors can use this walkthrough page as a reference while they follow along. Alternatively, instructors may choose to assign this walkthrough for students to complete on their own in advance of the exercises and discussion in the following submodules.
+</div>
+
+Using pre-built packages in R can dramatically expand its functionality. We'll experiment with one common package in particular that can help us work with data.
+
 ## Jump to a section
 1. [Starting an R project](#starting-an-r-project)
 1. [Installing and importing packages](#installing-and-importing-packages)
@@ -26,7 +32,9 @@ Give the directory a name (let's go with `covid_data`) and place it somewhere we
 
 Then click `Create Project`.
 
-<div class="alert alert-success"><b>PRO TIP:</b> It's a good habit to name your files and directories WITHOUT any spaces. You can use underscores (<code>_</code>) or dashes (<code>-</code>) to make your names more readable.</div>
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> It's a good habit to name your files and directories WITHOUT any spaces. You can use underscores (<code>_</code>) or dashes (<code>-</code>) to make your names more readable..
+</div>
 
 Now, when you create a new script with `File > New File > R script`, then 'Save As...', it will by default save to your project directory.
 
@@ -48,7 +56,9 @@ There are two steps to working with R packages:
 
 Like Excel and Sheets, R also uses **functions** to perform actions. We'll use one of those functions – `install.packages()` – to install tidyverse now.
 
-<div class="alert alert-warning"><b>REMEMBER:</b> This step &#x2935; we'll only have to do ONCE for your machine.</div>
+<div class="alert alert-success" role="alert">
+    <strong>REMINDER:</strong> This step &#x2935; we'll only have to do ONCE for your machine.
+</div>
 
 ```R
 #install the tidyverse package
@@ -61,7 +71,9 @@ Execute the code by clicking the "Run" button at the top right of your script pa
 
 Then load them from our library.
 
-<div class="alert alert-warning"><b>NOTE:</b> This step &#x2935; we'll have to do EACH TIME we start R or start a new workspace.</div>
+<div class="alert alert-success" role="alert">
+    <strong>REMINDER:</strong> This step &#x2935; we'll have to do EACH TIME we start R or start a new workspace.
+</div>
 
 ```R
 #load our packages from our library into our workspace
@@ -99,7 +111,9 @@ Take note that in your "Environment" pane (by default in the top right), you sho
 
 You can click on the dataset in your environment window to view it in a new tab in your "Source" pane, much like you would in Excel or some other spreadsheet software.
 
-<div class="alert alert-success"><b>PRO TIP:</b> Seeing errors when your code executes? Read those error messages carefully to troubleshoot your code. Are all your libraries installed and loaded? Are you in the right working directory? Is the file you're trying to load <i>also</i> in your working directory?</div>
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Seeing errors when your code executes? Read those error messages carefully to troubleshoot your code. Are all your libraries installed and loaded? Are you in the right working directory? Is the file you're trying to load <i>also</i> in your working directory?.
+</div>
 
 ## Working with pipes
 
@@ -107,7 +121,9 @@ For our analysis here, we'll be using a Tidyverse specialty: the "pipe".
 
 Pipes – which look like this `%>%` – to chain together the output of functions from one line to the next line, allowing you to build complex operations with just a few lines of code.
 
-<div class="alert alert-success"><b>PRO TIP:</b> If you want to save some time typing, you can use the keyboard shortcut <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> to add a pipe.</div>
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> If you want to save some time typing, you can use the keyboard shortcut <kbd>Command</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> to add a pipe..
+</div>
 
 As an example, let's check to make sure we got all the data when we loaded it.
 
@@ -176,7 +192,9 @@ covid_ny %>%
   view()
 ```
 
-<div class="alert alert-success"><b>PRO TIP:</b> Getting errors? You can troubleshoot your code by selectively highlighting a few lines of code at a time and executing with <kbd>CMD</kbd> + <kbd>Enter</kbd>. Make sure NOT to include the <code>%>%</code> symbol at the end of a highlighted section of code. Remember it chains your command to the next line, so RStudio will wait, thinking you're going to enter more code!</div>
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Getting errors? You can troubleshoot your code by selectively highlighting a few lines of code at a time and executing with <kbd>CMD</kbd> + <kbd>Enter</kbd>. Make sure NOT to include the <code>%>%</code> symbol at the end of a highlighted section of code. Remember it chains your command to the next line, so RStudio will wait, thinking you're going to enter more code!
+</div>
 
 ## Cleaning data with `mutate`
 
@@ -201,7 +219,9 @@ covid_ny_clean <- covid_ny %>% #assign to new variable
   relocate(date_clean, .after = date) #change column order
 ```
 
-<div class="alert alert-success"><b>PRO TIP:</b> Wherever possible, it's a good idea not to overwrite your original data. Create new columns with clean data, and new dataframes that leave your originals intact. That way, if you make a mistake, you can quickly start again without having to reload data from the source.</div>
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Wherever possible, it's a good idea not to overwrite your original data. Create new columns with clean data, and new dataframes that leave your originals intact. That way, if you make a mistake, you can quickly start again without having to reload data from the source..
+</div>
 
 Don't see anything in your console? Don't worry!
 

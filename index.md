@@ -11,7 +11,7 @@ If you use any components of this course, please consider [taking our survey](ht
 
 ## Course material
 
-The course itself is split into five modules.
+The course itself is split into five modules, each containing a series of submodules.
 
 Data as a system
 : Before working with data, data journalists need to develop an ability to think critically about its strengths and weaknesses. And thinking of data as one part of a larger system can help.
@@ -45,6 +45,22 @@ Each of this course's five modules contains a mix of submodules that include:
 * class discussions
 
 Each module also includes a setup page for instructors and tips/further reading for students.
+
+## Notes and tips
+
+Within many of the modules, different "alert" boxes will offer tips to instructors and students.
+
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> This message for instructors offers pedagogical guidance and tips on presenting the lesson.
+</div>
+
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> This message for students offers reminders or best practices during walkthroughs and other aspects of the course. Sometimes it might <a href="#!" class="alert-link">include a link</a>.
+</div>
+
+<div class="alert alert-success" role="alert">
+    <strong>REMINDER:</strong> Specific instructions involving troubleshooting or avoiding errors and pitfalls.
+</div>
 
 ## Want to contribute?
 

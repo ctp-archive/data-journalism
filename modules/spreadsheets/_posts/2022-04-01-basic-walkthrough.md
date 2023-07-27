@@ -6,6 +6,12 @@ title: 'Walkthrough: Spreadsheet basics'
 
 ***Total suggested time: 30 minutes***
 
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> The following exercises are designed to be followed step by step as a class, with the instructor as the facilitator. Instructors can use this walkthrough page as a reference while they follow along. Alternatively, instructors may choose to assign this walkthrough for students to complete on their own in advance of the exercises and discussion in the following submodules.
+</div>
+
+Now that you know more about the structure of a spreadsheet, we'll explore the basic functionality of a spreadsheet program, including sorting, filtering and basic formulas.
+
 ## Jump to a section
 
 1. [Download the data](#download-the-data)
@@ -66,7 +72,9 @@ Here's the listing from the COVID Tracking Project's field definitions, a **data
 * [`onVentilatorCurrently`](https://explore.covidtracking.com/field-definitions/onVentilatorCurrently.html) - individuals who are currently hospitalized under advanced ventilation with COVID-19
 * [`death`](https://explore.covidtracking.com/field-definitions/death.html) - total fatalities with confirmed OR probable COVID-19 case diagnosis
 
-> **PRO-TIP** Get the data dictionary for every dataset you work with. It's a handy guide that can help us make sure the data means what we think it means!
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Get the data dictionary for every dataset you work with. It's a handy guide that can help us make sure the data means what we think it means!.
+</div>
 
 ## Navigating the spreadsheet
 

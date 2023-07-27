@@ -14,7 +14,9 @@ The United States needs a plan for aggregating the results of each state's syste
 
 As a class, use the sketches from each political division to sketch out a **new system**: a plan for how the federal government should aggregate this data from the **state level** to the **national level**.
 
-> **For instructors:** Whether students used digital or physical sketches, find a way to show as many of their individual diagrams to the whole class (post them on the board, combine them in a Google slide etc.) to aid in sketching the new, expanded system.
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> Whether students used digital or physical sketches, find a way to show as many of their individual diagrams to the whole class (post them on the board, combine them in a Google slide etc.) to aid in sketching the new, expanded system.
+</div>
 
 As you work, consider the following questions as a class:
 

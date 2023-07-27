@@ -10,7 +10,9 @@ title: Tracking COVID by state
 
 *Total suggested time: 1-2 minutes*
 
-> **For instructors:** Read or provide students with the following scenario as a preface to the following hands-on group exercise.
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> Read or provide students with the following scenario as a preface to the following hands-on group exercise.
+</div>
 
 With COVID-19 on the rise, your statewide news organization has decided to build a **system** for tracking cases and other data provided by state officials online.
 

@@ -12,7 +12,7 @@ title: Working with traumatic data
 
 After students have listened to the oral histories on their own, devote all or a portion of the next class to guided discussion, starting with students sharing their main takeaways from one or more of the oral histories they reviewed.
 
-## Class discussion: Who did you hear from?
+## Class discussion: Confronting trauma
 
 *Suggested time: 30 minutes*
 

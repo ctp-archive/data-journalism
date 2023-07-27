@@ -10,7 +10,9 @@ title: When systems fail
 
 After students have listened to the podcast on their own, devote all or a portion of the next class to a guided discussion about the content, using all or some of the following questions in class.
 
-> **For instructors:** As you guide the discussion, try steering portions of the conversation from "understanding" questions to "evaluation" questions to build the complexity of students' learning.
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> As you guide the discussion, try steering portions of the conversation from "understanding" questions to "evaluation" questions to build the complexity of students' learning.
+</div>
 
 ### 'Understanding' questions
 *Suggested time: 15 minutes*

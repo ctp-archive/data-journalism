@@ -62,7 +62,7 @@ Individually or in small groups, select data from one of the states below.
   * How did local news organizations cover the spike?
   * In your view, how well did their coverage serve the community?
 
-## Class discussion: 
+## Class discussion: Considering peak COVID
 *Suggested time: 20 minutes*
 
 As a class, students should report back their findings and discuss:

@@ -6,6 +6,12 @@ title: 'Walkthrough: Investigating disparities'
 
 ***Total suggested time: 30 minutes***
 
+<div class="alert alert-primary" role="alert">
+    <strong>FOR INSTRUCTORS:</strong> The following exercises are designed to be followed step by step as a class, with the instructor as the facilitator. Instructors can use this walkthrough page as a reference while they follow along. Alternatively, instructors may choose to assign this walkthrough for students to complete on their own in advance of the exercises and discussion in the following submodules.
+</div>
+
+Numbers out of context often aren't enough to help us inform our audiences. In this walkthrough, we'll use joins and a little math to create comparisons we can use to probe for disparities.
+
 ## Jump to a section
 1. [Getting set up](#getting-set-up)
 1. [Downloading and importing the data](#downloading-and-importing-the-data)
@@ -24,17 +30,24 @@ Create a new folder in your project directory called `data`.
 
 And start a new R script in your main project directory, and `Save as...` with a name of your choice.
 
-<div class="alert alert-warning"><b>NOTE:</b> For a refresher, see <a href="{{ site.baseurl }}/modules/intro-to-r/tidyverse/#starting-an-r-project">Starting an R Project</a> in the previous module.</div>
+<div class="alert alert-success" role="alert">
+    <strong>REMINDER:</strong> For a refresher, see <a href="{{ site.baseurl }}/modules/intro-to-r/tidyverse/#starting-an-r-project">Starting an R Project</a> in the previous module.
+</div>
 
 Load our [Tidyverse](https://www.tidyverse.org/) package, which we should already have installed
 
-<div class="alert alert-warning"><b>NOTE:</b> This step &#x2935; we'll have to do EACH TIME we start R or start a new workspace.</div>
+<div class="alert alert-success" role="alert">
+    <strong>REMINDER:</strong> This step &#x2935; we'll have to do EACH TIME we start R or start a new workspace.
+</div>
 
 ```R
 #load our packages from our library into our workspace
 library(tidyverse)
 ```
-<div class="alert alert-success"><b>PRO TIP:</b> If you get an error about R not being able to locate a package, make sure you have it installed!</div>
+
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> If you get an error about R not being able to locate a package, make sure you have it installed!
+</div>
 
 ## Downloading and importing the data
 
@@ -148,11 +161,11 @@ We could repeat these steps, but the process is a little tedious. What if we mak
 
 Before we get there though, let's talk about **joins**.
 
-<div class="alert alert-warning"><b>NOTE:</b> If you worked with a previous module on advanced spreadsheets, some of this might sound familiar.</div>
-
 At their core, joins in data journalism and data science (or any other field that works with databases) is just a way to link two datasets together using a common, matching field – often called a **key**.
 
-<div class="alert alert-success"><b>PRO TIP:</b> Joins like these will only match if the two terms are EXACTLY equal – that means they have to be equal data types too.</div>
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Joins like these will only match if the two terms are EXACTLY equal – that means they have to be equal data types too.
+</div>
 
 There are lots of [types of joins](https://dplyr.tidyverse.org/reference/mutate-joins.html), but for this analysis, we'll use a **left join**. 
 
@@ -302,7 +315,9 @@ covid_race_joined %>%
   )
 ```
 
-<div class="alert alert-success"><b>PRO TIP:</b> Using <code>100,000</code> here is a <b>methodological decision</b> – we could have used <code>1,000</code> or even <code>10,000</code> – but the goal is to transform the resulting rate into a number that is <b>readable</b> and shows a reasonable amount of <b>precision</b>. For population comparisons, <code>100,000</code> is generally acceptable.</div>
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Using <code>100,000</code> here is a <b>methodological decision</b> – we could have used <code>1,000</code> or even <code>10,000</code> – but the goal is to transform the resulting rate into a number that is <b>readable</b> and shows a reasonable amount of <b>precision</b>. For population comparisons, <code>100,000</code> is generally acceptable.
+</div>
 
 With that adjustment, we've now calculated the **rate of COVID deaths per 100,000 population**. That's still a bit of a mouthful, but we can also clearly compare the disparities we're seeing among the different populations in the state – 186 for white residents vs. 241 for Asian residents.
 
