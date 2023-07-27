@@ -44,7 +44,9 @@ Click where it says "Untitled Spreadsheet" and give it a name, then move it some
 
 You can name it anything you want – in our case, we'll keep it simple and use `covid_ny`.
 
-> **PRO-TIP** It's a good habit to name your files and directories in lowercase WITHOUT any spaces, to make them more computer readable . You can use underscores or dashes to make your names more human readable.
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> It's a good habit to name your files and directories in lowercase WITHOUT any spaces, to make them more computer readable . You can use underscores or dashes to make your names more human readable.
+</div>
 
 To import the file, click `File > Import` in the main menu, then click `UPLOAD`. From here, you'll need to browse to where you downloaded your CSV file and select it or drag the file directly into the dialogue box.
 
@@ -88,7 +90,9 @@ To make our lives a little easier, we can use a series of keyboard shortcuts to 
 
 Pressing <kbd> CTRL + ↓ </kbd>&ensp;(PC) or <kbd> CMD + ↓ </kbd>&ensp;(Mac), for example, will jump down to the end of your current column – or the last cell with actual data in it. <kbd> CTRL + ↑ </kbd>/<kbd> CMD + ↑ </kbd>&ensp;will jump back up to your header row.
 
-> **PRO-TIP** Bookmark [the link here](/modules/spreadsheets/further-reading/#keyboard-shortcuts) to jump to the full list of keyboard shortcuts quickly.
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Bookmark <a href="{{ site.baseurl }}/modules/spreadsheets/further-reading/#keyboard-shortcuts" class="alert-link">the link here</a> to jump to the full list of keyboard shortcuts quickly.
+</div>
 
 ## Sorting and filtering
 By default, the data is sorted by `date` in **descending** order. Let's start from the beginning instead.
@@ -144,7 +148,9 @@ There are functions to do basic math ([`SUM`](https://support.google.com/docs/an
 
 So `=SUM(2,2)` would display `4`, and it's the equivalent of just typing `=4+4` in the cell.
 
-> **PRO-TIP** Look up Google Sheet formulas and their arguments with [this searchable function list](https://support.google.com/docs/table/25273?hl=en&ref_topic=1361471).
+<div class="alert alert-info" role="alert">
+    <strong>PRO TIP:</strong> Look up Google Sheet formulas and their arguments with <a href="https://support.google.com/docs/table/25273?hl=en&ref_topic=1361471" class="alert-link">this searchable function list</a>.
+</div>
 
 Once you type `=` at the beginning of a cell, you can substitute values from other cells with a **cell reference**, a letter and number combination describing the row and column of the cell.
 

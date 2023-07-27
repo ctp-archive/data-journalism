@@ -3,7 +3,7 @@ layout: index
 published: true
 ---
 
-Welcome to the COVID data journalism course-in-a-box from the [COVID Tracking Project archive](https://oac.cdlib.org/findaid/ark:/13030/c8cc17ft/), housed at the University of California, San Francisco. This course contains **five modules** aimed at using content from the COVID Tracking Project to learn the conceptual foundations of data journalism.
+Welcome to the COVID data journalism course-in-a-box from the [COVID Tracking Project archive](https://oac.cdlib.org/findaid/ark:/13030/c8cc17ft/), housed at the University of California, San Francisco. This course contains **five modules** aimed at using content from the COVID Tracking Project to teach and learn the conceptual foundations of data journalism.
 
 Although the content of this course is targeted primarily toward data journalism educators on the undergraduate level, all the materials here are open for use to anyone interested in learning or teaching data journalism.
 
@@ -11,21 +11,21 @@ If you use any components of this course, please consider [taking our survey](ht
 
 ## Course material
 
-The course itself is split into five modules, each containing a series of submodules.
+The course itself is split into five modules, each containing a series of submodules. Each module is briefly described below, but links to each module and its content can be found at the top of this page.
 
-Data as a system
+[Data as a system]({{ site.baseurl }}/modules/data-as-a-system/the-setup/)
 : Before working with data, data journalists need to develop an ability to think critically about its strengths and weaknesses. And thinking of data as one part of a larger system can help.
 
-Spreadsheets
+[Spreadsheets]({{ site.baseurl }}/modules/spreadsheets/the-setup/)
 : Spreadsheets are a foundation of data journalism, and much of what you’ll learn in this module will look familiar when working with data in other formats and in other platforms.
 
-Liberating data
+[Liberating data]({{ site.baseurl }}/modules/liberating-data/the-setup/)
 : Data doesn’t always arrive ready to analyze. A data journalist’s job often involves collecting data from multiple sources or transforming it from unwieldy formats to something more structured.
 
-Intro to R
+[Intro to R]({{ site.baseurl }}/modules/intro-to-r/the-setup/)
 : The statistical programming language R is quickly becoming one of the standard tools for data journalists around the world. Its use can help us expand our understanding of data and how to analyze it.
 
-The weight of data
+[The weight of data]({{ site.baseurl }}/modules/the-weight-of-data/the-setup/)
 : Data is more than just numbers – it’s an attempt to quantify often emotional aspects of humanity, like loss and illness. Data journalists should be prepared for the implications of working with and presenting these numbers, both on themselves and their audiences.
 
 ## Course structure

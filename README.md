@@ -11,7 +11,7 @@ Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for 
 - [ ] Proofreading
 - [ ] Check links
 - [ ] Archive all external links
-- [ ] Add instructor note to walkthrough
+- [X] Add instructor note to walkthrough
  
 ## Making changes
 
@@ -34,8 +34,10 @@ When linking images, make sure to use `{{ site.baseurl }}` to work with both tes
 Notes to keep styling consistent.
 
 ### Credit style for tips and further reading
+```
 * [Linked title]()
 : Author, *Publication*
+```
 
 ### Instructor note boxes
 ```
