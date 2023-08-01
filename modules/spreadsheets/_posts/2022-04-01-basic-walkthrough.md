@@ -20,7 +20,7 @@ Now that you know more about the structure of a spreadsheet, we'll explore the b
 1. [Navigating the spreadsheet](#navigating-the-spreadsheet)
 1. [Sorting and filtering](#sorting-and-filtering)
 1. [Functions and cell references](#functions-and-cell-references)
-1. [Cleaning data with functions](#cleaning-data-with-functions)
+1. [Cleaning data with functions](#cleaning-data-with-formulas)
 1. [Filling down](#filling-down)
 1. [Adding data with formulas](#adding-data-with-formulas)
 1. [Nesting formulas](#nesting-formulas)

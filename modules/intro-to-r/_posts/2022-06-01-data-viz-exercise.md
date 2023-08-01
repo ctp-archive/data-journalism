@@ -8,7 +8,7 @@ title: Visualization in practice
 
 ## Class exercise: Going further with viz
 
-*Suggested time: 20 minutes*
+*Suggested time: 30 minutes*
 
 With what you've learned so far, see if you can create the following visualizations as a class:
 

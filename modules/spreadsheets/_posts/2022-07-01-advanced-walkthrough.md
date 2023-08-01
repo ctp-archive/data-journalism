@@ -14,7 +14,7 @@ So far, you've mastered sorting, filtering, functions and other basic spreadshee
 
 ## Jump to a section
 
-1. [Scraping facility data](#scraping-facility-data)
+1. [Scraping data](#scraping--data)
 1. [Import population data](#import-population-data)
 1. [Data dictionary](#data-dictionary)
 1. [Naming your tabs](#naming-your-tabs)
@@ -24,7 +24,7 @@ So far, you've mastered sorting, filtering, functions and other basic spreadshee
 1. [Using Pivot Tables to create crosstabs](#using-pivot-tables-to-create-crosstabs)
 1. [Calculated fields with pivot tables](#creating-calculated-fields-in-pivot-tables)
 
-## Scraping the facility data
+## Scraping data
 
 For this walkthrough, we'll be working with long-term care facility outbreak data from the state of [Connecticut](https://explore.covidtracking.com/state/ct/ltc/facilities.html).
 
@@ -38,7 +38,7 @@ IMPORTHTML(url, query, index)
 
 The `URL` (or uniform resource locator) we need is just the link containing the data:
 
-https://explore.covidtracking.com/state/ct/ltc/facilities.html
+*https://explore.covidtracking.com/state/ct/ltc/facilities.html*
 
 For `query`, this function accepts either "list" or "table." To know which one we need, we'll need to dig into the guts of the web page. Most web browsers have a tool to do just that!
 
@@ -88,7 +88,7 @@ We'll also use one additional dataset: [2020 town population estimates](https://
 
 Download a simplified version of the data here.
 
-<form method="get" action="/materials/ct_city_pop.csv" class="text-center">
+<form method="get" action="{{ site.baseurl }}/materials/ct_city_pop.csv" class="text-center">
 	<button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Download the data</button>
 </form>
 
@@ -209,7 +209,7 @@ When we do a fill down (or autocomplete when prompted by Sheets), you should see
 Success! Well, sort of.
 
 <div class="alert alert-info" role="alert">
-    <strong>PRO TIP:</strong> Getting multiple errors? Review your formula carefully. Did you use the correct search key? Did you provide the correct range, with the data you want to match between sheets in the first position?.
+    <strong>PRO TIP:</strong> Getting multiple errors? Review your formula carefully. Did you use the correct search key? Did you provide the correct range, with the data you want to match between sheets in the first position?
 </div>
 
 Do you spot any errors? How about on rows where the facility is located in Mystic, Conn.? Or Southport? Or a town called "MARLBOROUG H"?

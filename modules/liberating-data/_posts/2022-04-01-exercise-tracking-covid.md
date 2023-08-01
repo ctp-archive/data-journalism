@@ -26,9 +26,9 @@ Use the `methodology` sheet to keep notes describing how you're capturing your d
 
 *Suggested time: 25 minutes*
 
-* How does your final product compare to the fields used by the COVID Tracking project in [its summary data file](https://covidtracking.com/data/download/national-history.csv)?
-* What details and measurements are lost when adding data across states?
-* How trustworthy is the data you aggregated across states?
-* How would you communicate or explain the uncertainty in the data to your audience?
+* How does your final product **compare** to the fields used by the COVID Tracking project in [its summary data file](https://covidtracking.com/data/download/national-history.csv)?
+* What details and measurements are **lost** when adding data across states?
+* How **trustworthy** is the data you aggregated across states?
+* How would you communicate or explain the **uncertainty** in the data to your audience?
 
 

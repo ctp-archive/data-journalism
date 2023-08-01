@@ -24,7 +24,9 @@ Download and install the [latest version of R from CRAN](https://cran.rstudio.co
 
 No need to change any of the settings in the default install wizard.
 
-*NOTE: If you're on a Mac, and you get an error about not being able to open an application downloaded from the Internet, right-click (or control-click) on the file and click "Open" on the dialog to override Apple's sometimes finicky security settings.*
+<div class="alert alert-success" role="alert">
+    <strong>NOTE:</strong> If you're on a Mac, and you get an error about not being able to open an application downloaded from the Internet, right-click (or control-click) on the file and click "Open" on the dialog to override Apple's sometimes finicky security settings
+</div>
 
 ### Step 2: Install RStudio
 
@@ -116,4 +118,4 @@ R has a lot of great, basic functionality built in. But an entire community of R
 
 We'll talk about some of those next.
 
-For a list of common R terms and some handy keyboard shortcuts, [check out the Tips and Further Reading page]({{ site.baseurl }}/modules/spreadsheets/further-reading/).
+For a list of common R terms and some handy keyboard shortcuts, [check out the Tips and Further Reading page]({{ site.baseurl }}/modules/intro-to-r/further-reading/).

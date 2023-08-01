@@ -3,7 +3,7 @@ layout: index
 published: true
 ---
 
-Welcome to the COVID data journalism course-in-a-box from the [COVID Tracking Project archive](https://oac.cdlib.org/findaid/ark:/13030/c8cc17ft/), housed at the University of California, San Francisco. This course contains **five modules** aimed at using content from the COVID Tracking Project to teach and learn the conceptual foundations of data journalism.
+Welcome to the COVID data journalism course-in-a-box from the [COVID Tracking Project archive](https://www.library.ucsf.edu/archives/covid-19-pandemic/the-covid-tracking-project-archive/), housed at the University of California, San Francisco. This course contains **five modules** aimed at using content from the COVID Tracking Project to teach and learn the conceptual foundations of data journalism.
 
 Although the content of this course is targeted primarily toward data journalism educators on the undergraduate level, all the materials here are open for use to anyone interested in learning or teaching data journalism.
 
@@ -55,7 +55,7 @@ Within many of the modules, different "alert" boxes will offer tips to instructo
 </div>
 
 <div class="alert alert-info" role="alert">
-    <strong>PRO TIP:</strong> This message for students offers reminders or best practices during walkthroughs and other aspects of the course. Sometimes it might <a href="#!" class="alert-link">include a link</a>.
+    <strong>PRO TIP:</strong> This message for students offers reminders or best practices during walkthroughs and other aspects of the course.
 </div>
 
 <div class="alert alert-success" role="alert">
