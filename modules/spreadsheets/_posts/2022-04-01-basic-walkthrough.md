@@ -212,7 +212,7 @@ Use these formulas to extract the first year, month and day from our `date` colu
     <div class="card-header" role="tab" id="headingOne">
       <h5 class="mb-0">
         <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Hint: Click to show formulas
+          HINT: Click to show formulas
         </a>
       </h5>
     </div>

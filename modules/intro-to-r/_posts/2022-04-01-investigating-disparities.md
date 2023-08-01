@@ -21,6 +21,7 @@ Numbers out of context often aren't enough to help us inform our audiences. In t
 1. [Executing the join](#executing-the-join)
 1. [Calculating rates](#calculating-rates)
 1. [Disparity ratios](#disparity-ratios)
+1. [Get the full script](#get-the-full-script)
 
 ## Getting set up
 
@@ -74,7 +75,26 @@ We'll need one more dataset. This one is the race and ethnicity breakdown of the
   <button type="submit" class="btn btn-primary"><i class="fa fa-database"></i> Download the data</button>
 </form>
 
-Download the file and save it to your project file's `data` directory. Then import the data into your workspace.
+Download the file and save it to your project file's `data` directory. Then import the data into your workspace using a similar command to the one above.
+
+<div id="accordion" role="tablist">
+  <div class="card">
+    <div class="card-header" role="tab" id="headingOne">
+      <h5 class="mb-0">
+        <a class="collapsed" data-toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Hint: Click to show command
+        </a>
+      </h5>
+    </div>
+    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+      <div class="card-body">
+        <div class="language-R highlighter-rouge"><div class="highlight"><pre class="highlight"><code class="hljs nginx"><span class="c1"><span class="hljs-comment">#load in nv race and ethnicity population data</span></span><span class="w">
+</span><span class="n"><span class="hljs-attribute">census_race_nv</span></span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read_csv</span><span class="p">(</span><span class="s1"><span class="hljs-string">'data/nv_race_ethnicity_census.csv'</span></span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+      </div>
+    </div>
+  </div>
+</div>
 
 This is a pretty small file: just 9 rows and 3 columns.
 
@@ -130,9 +150,7 @@ Hispanic residents in Nevada made up 24% of COVID-19 deaths.
 
 Let's move on to the next question.
 
-```
-What percentage of Nevada residents are Hispanic?
-```
+**What percentage of Nevada residents are Hispanic?**
 
 View the dataframe by clicking on the `census_race_nv` in your environment pane. 
 
@@ -265,12 +283,47 @@ covid_race_joined %>%
 
 Let's take a closer look at those numbers and see what they show. For our purposes here, we'll focus on some of the larger racial groups to avoid the problem of **small numbers**, where tiny variations have bigger impacts.
 
-|label  | deaths| population| pop_pct| death_pct|
-|:------|------:|----------:|-------:|---------:|
-|White  |   2,719|    1,460,159|    48.2|      54.0|
-|Black  |    468|     271,744|     9.0|       9.3|
-|LatinX |   1,203|     875,798|    28.9|      23.9|
-|Asian  |    594|     246,904|     8.1|      11.8|
+<table class="table table-responsive">
+  <thead class="thead-light">
+    <tr>
+      <th>label</th>
+      <th class="text-right">deaths</th>
+      <th class="text-right">population</th>
+      <th class="text-right">pop_pct</th>
+      <th class="text-right">death_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">White</th>
+      <td class="text-right">2,719</td>
+      <td class="text-right">1,460,159</td>
+      <td class="text-right">48.2</td>
+      <td class="text-right">54.0</td>
+    </tr>
+    <tr>
+      <th scope="row">Black</th>
+      <td class="text-right">468</td>
+      <td class="text-right">271,744</td>
+      <td class="text-right">9.0</td>
+      <td class="text-right">9.3</td>
+    </tr>
+    <tr>
+      <th scope="row">LatinX</th>
+      <td class="text-right">1,203</td>
+      <td class="text-right">875,798</td>
+      <td class="text-right">28.9</td>
+      <td class="text-right">23.9</td>
+    </tr>
+    <tr>
+      <th scope="row">Asian</th>
+      <td class="text-right">594</td>
+      <td class="text-right">246,904</td>
+      <td class="text-right">8.1</td>
+      <td class="text-right">11.8</td>
+    </tr>
+  </tbody>
+</table>
 
 Like before, we see where Hispanic deaths don't seem to show a significant racial disparity. Nor do Black deaths.
 
@@ -348,5 +401,7 @@ Any one of those findings could be a story worth exploring.
 
 And now that you know how to do it for one state, you can repeat the process for any state with similar data to find where the disparities are the highest and lowest.
 
+## Get the full script
 
+Download the full script for this walkthrough [here]({{ site.baseurl }}/materials/r_scripts/disparity_analysis.R).
 

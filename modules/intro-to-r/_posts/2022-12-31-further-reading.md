@@ -27,6 +27,14 @@ title: Tips and further reading
 * [Gallery of ggplot extensions](https://exts.ggplot2.tidyverse.org/gallery/)
 : Contributed, *Tidyverse.org*
 
+## Full R scripts
+
+Get the full R scripts for this modules walkthroughs here:
+
+1. [R and the Tidyverse]({{ site.baseurl }}/materials/r_scripts/covid_analysis.R)
+1. [Investigating disparities in R]({{ site.baseurl }}/materials/r_scripts/disparity_analysis.R)
+1. [Data visualization in R]({{ site.baseurl }}/materials/r_scripts/covid_viz.R)
+
 ## Handy keyboard shortcuts
 
 A few common shortcuts in RStudio can save you from typing a lot of extra keystrokes.

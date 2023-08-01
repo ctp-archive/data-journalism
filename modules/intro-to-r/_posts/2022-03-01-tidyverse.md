@@ -21,6 +21,7 @@ Using pre-built packages in R can dramatically expand its functionality. We'll e
 1. [Cleaning data with `mutate`](#cleaning-data-with-mutate)
 1. [Adding columns based on existing data](#adding-columns-based-on-existing-data)
 1. [Grouping by variables](#grouping-by-variables)
+1. [Get the full script](#get-the-full-script)
 
 ## Starting an R project
 
@@ -242,7 +243,7 @@ Because our data is organized so each row is a date, to calculate the change day
 First let's ask R for the help file on the lag function.
 
 ```R
-#display the help file for lag
+#display an explanation of the lag function
 ?lag
 ```
 
@@ -250,10 +251,10 @@ Depending on how you've got your packages loaded, the Help pane may give you mor
 
 These two versions function in a similar way, but go ahead and click the option that reads: "Compute lagged or leading values". There, we'll see a detailed description of lag and its required parameters.
 
-```
-Description
-Find the "previous" (lag()) or "next" (lead()) values in a vector. Useful for comparing values behind of or ahead of the current values.
-```
+
+>**Description**  
+Find the "previous" (`lag()`) or "next" (`lead()`) values in a vector. Useful for comparing values behind of or ahead of the current values.
+
 
 When using `lag()` or `lead()`, order is important. So we'll sort the data correctly before piping the output to our `mutate()` function.
 
@@ -305,3 +306,7 @@ covid_ny_clean %>%
 Notice, by the way, that in this case we're not overwriting any of our source data.
 
 Like working with spreadsheet features like pivot tables, constructing these commands in R scripts allow us to run and rerun calculations in our data in a reproducible way, while leaving our original information intact.
+
+## Get the full script
+
+Download the full script for this walkthrough [here]({{ site.baseurl }}/materials/r_scripts/covid_analysis.R).
