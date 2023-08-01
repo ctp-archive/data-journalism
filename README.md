@@ -1,19 +1,16 @@
-# Data journalism with the CTP archive
+# COVID Tracking Project Archive Course in a Box
 
-Designed and created for the [COVID Tracking Project Archive](https://www.library.ucsf.edu/archives/covid-19-pandemic/the-covid-tracking-project-archive/) housed at the University of California San Francisco Archives and Special Collections. Funded by a [data engagement award](https://www.nnlm.gov/about/regions/region5) from the National Network of Libraries of Medicine Region 5.
+The COVID data journalism course-in-a-box – [available online here](https://ctp-archive.github.io/data-journalism/) – is an open-source curriculum for teaching the conceptual foundations of data journalism using material from the [COVID Tracking Project Archive](https://www.library.ucsf.edu/archives/covid-19-pandemic/the-covid-tracking-project-archive/), housed at the University of California, San Francisco.
 
-Uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from P2PU for building and publishing online courses.
+Although the content of this course is targeted primarily toward data journalism educators on the undergraduate level, all the materials on the site are open for use to anyone interested in learning or teaching data journalism.
 
-## TODO
+The project was designed and created by [Tyler Dukes](https://github.com/mtdukes) for the [COVID Tracking Project Archive](https://www.library.ucsf.edu/archives/covid-19-pandemic/the-covid-tracking-project-archive/) housed at the University of California, San Francisco Archives and Special Collections. Funded was provided by a [data engagement award](https://www.nnlm.gov/about/regions/region5) from the National Network of Libraries of Medicine Region 5 and the Alfred P. Sloan Foundation (Sloan grant G-2022-17133).
 
-- [X] Add pacing
-- [ ] Add scripts/sample sheets
-- [ ] Proofreading
-- [ ] Check links
-- [ ] Archive all external links
-- [X] Add instructor note to walkthrough
- 
+The site uses the [Course-in-a-Box tool](https://course-in-a-box.p2pu.org) from Peer 2 Peer University for building and publishing online courses.
+
 ## Making changes
+
+For detailed documentation on how to use the course-in-a-box tool from P2PU, follow the organization's [setup and customization guide](https://course-in-a-box.p2pu.org/).
 
 To make changes to the template itself, a good place to start is the [`_layouts`](/_layouts), [`_includes`](/_includes) and [`css`](/css) directories. These directories contain all the layout and style files used.
 
@@ -25,7 +22,7 @@ Push to the `gh-pages` fork.
 
 ## Adding materials
 
-Custom-created course materials are stored in the [`materials`](/materials) directory. Other source materials will be linked directly to the CTP Archive where possible.
+Custom-created course materials are stored in the [`materials`](/materials) directory. Other source materials are linked directly to the COVID Tracking Project or the COVID Tracking Project archive where possible.
 
 When linking images, make sure to use `{{ site.baseurl }}` to work with both testing and the deployed version.
 
@@ -35,7 +32,7 @@ Notes to keep styling consistent.
 
 ### Credit style for tips and further reading
 ```
-* [Linked title]()
+* [Linked title](http://google.com)
 : Author, *Publication*
 ```
 
